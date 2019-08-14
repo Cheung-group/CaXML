@@ -1,0 +1,41 @@
+.
+├── Contactmaps
+│   ├── allatom (4A)
+│   ├── allatom (7A)
+│   ├── backbone (4A)
+│   ├── backbone (7A)
+│   ├── differences (4A)
+│   ├── Differences (7A)
+│   ├── sidechain (4A)
+│   └── sidechain (7A)
+├── JakesProteins
+│   ├── deconv_structures
+│   │   ├── aaa
+│   │   ├── rak
+│   │   └── rrk
+│   └── fraglib
+│       ├── aaa
+│       ├── cam
+│       ├── rak
+│       └── rrk
+├── MachineLearning
+│   ├── Data
+│   │   ├── coordinates
+│   │   ├── distance
+│   │   ├── point+distance
+│   │   ├── possepdis
+│   │   └── waterorientation
+│   ├── ModelStats
+│   │   ├── All90
+│   │   ├── ImportantVariables
+│   │   └── PositiveRestricted
+│   └── Realtests
+├── Proteins
+│   ├── papers
+│   │   └── ideal_proteins
+│   ├── structures
+│   └── visualizations
+└── Scripts
+    └── matlab
+
+38 directories
