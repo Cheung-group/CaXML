@@ -6,15 +6,7 @@ Created on Wed Jul 24 15:24:45 2019
 @author: nate
 """
 
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Jul  9 14:36:40 2019
-
-@author: nate
-"""
-
-import h2o 
+import h2o
 h2o.init()
 
 output_path = "/home/nate/Desktop/"
@@ -48,6 +40,6 @@ while counter<=100:
 
     with open('/home/nate/Desktop/SplicePerformance.txt', 'a+') as f:
         print(h2o.as_list(pred[0]).values.tolist(), file=f, sep=',')
-    
-    
+
+
     counter+=1
