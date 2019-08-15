@@ -1,30 +1,26 @@
 # calML
 Deriving Ca2+ Charge in Varying Environment Using Machine Learning Methods
 
-## Using Nate’s Terribly Complicated Scripts
-__Machine Learning__
+## Machine Learning
 
-_Data_: Manipulating the coordinate data created by Pengzhi Zhang
-
-All scripts relating to this topic are stored in the directory: /home/nate/Desktop/Scripts/matlab
+_Data_: coordinates of the selected 70 loop3 structure from holoCaM from Pengzhi Zhang
 
 Read all comments in the scripts themselves for formatting and input instructions.
 
-all scripts leave the charge in the last column
+Calcium charge is in the last column
+
+__Data Manipulation__
 
 * __Distancefromcoordinate.m__: Takes in coordinates, spits out Euclidean distance from the calcium ion
 
 * __AddDistancetoCoordinates.m__: Takes in coordinate/Euclidean distance and spits out a 5-concatenation of atom number, x, y, z coordinates, and Euclidean distance
 
-* __Clustering.m__:Takes in any format with charge in the last column and splits the data into positively and negatively charged sets
+* __Clustering.m__: Takes in any format with charge in the last column and splits the data into positively and negatively charged sets
 
 * __waterorientation.m__: Takes in point+distance from AddDistancetoCoordinates. Adds a binary feature based on the orientation of the water molecule: 1 if O is towards the calcium, 0 if away. Requires very specific formatting.
 
-## Python Modeling:
 
-All scripts relating to this topic are stored in the directory /home/nate/Desktop/Scripts
-
-Read comments
+__Python Modeling__
 
 All scripts only need to have the input files replaced. Training data and prediction data can be loaded at will. 
 
@@ -41,25 +37,3 @@ All scripts only need to have the input files replaced. Training data and predic
 None of these scripts seem superior to the other, as the performance is largely dependent on the input data set. They are all thrown together for different outputs and analysis. 
 
 Chickentester averages 100 models predictions, for example.
-
-## Contact Analysis
-In the directory /home/nate/Desktop/Contactmaps
-
-* __natesbackbone.txt__: Replace output file destination. Load a structure with any number of frames in vmd and replace the n in ‘set mol n’ with, n, the molecule id of the trajectory of interest. It indicates backbone-backbone contacts only with hydrogens not included by default.
-
-* __natessidechain.txt__: same protocol as natesbackbone, but only indicates sidechain-sidechain contacts
-
-* __natescontactanalysis.txt__: same protocol as the others, but indicates all atom-atom contacts. Significantly slower.
-
-Formatting Contact Analysis Outputs for Matlab script
-
-Run the output file through the following bash command:
-
-sort -V file.txt | uniq | cut -f2,3 -d: | sort -V | uniq -c | sed ‘s/^\s*//’ | sed ‘s/:/ /g’ | awk ‘{print $2,$3,($1-1)/f >newfile.txt
-
-where f is the number of frames in the trajectory
-
-### Notes:
-* Generates the probability of contact in a given trajectory for each residue-residue pair
-* 4Å cutoff
-* 4 residue minimum sequence distance for contact consideration
