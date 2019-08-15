@@ -7,9 +7,6 @@ datmatrix=datmatrix; %Coordinates
 output=output; %Distance
 
 
-
-
-
 Lc=length(datmatrix(1,:));
 Rc=length(output(1,:));
 
@@ -24,7 +21,7 @@ end
 commas = Imatrix;
 
 
-%Reaarange columns
+%Re-arrange columns
 for c=5:5:Lc+(Rc-1)/2
     commas = horzcat(commas(:,1:(c-1)),Imatrix(:,(Lc + c/5)),commas(:,c:(Lc-1+c/5)),Imatrix(:,(Lc+1+c/5):end));
 end
