@@ -6,3 +6,4 @@ for each loop.
     *loop 3
     loop 4
 
+Yet only about 200 structures of loop3 from holoCaM & holoCaM-CaMKII are included.
