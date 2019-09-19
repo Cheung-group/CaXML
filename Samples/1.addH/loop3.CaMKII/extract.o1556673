@@ -1,0 +1,69 @@
+for 111 th cluster: 
+extracting frame 437 (start from 0) from part 77
+Info) VMD for LINUXAMD64, version 1.9.3 (December 13, 2017)
+Info) http://www.ks.uiuc.edu/Research/vmd/                         
+Info) Email questions and bug reports to vmd@ks.uiuc.edu           
+Info) Please include this reference in published work using VMD:   
+Info)    Humphrey, W., Dalke, A. and Schulten, K., `VMD - Visual   
+Info)    Molecular Dynamics', J. Molec. Graphics 1996, 14.1, 33-38.
+Info) -------------------------------------------------------------
+Info) Multithreading available, 28 CPUs detected.
+Info) Free system memory: 247GB (98%)
+Info) Dynamically loaded 1 plugins in directory:
+Info) /project/cacds/apps/easybuild/software/VMD/1.9.3-foss-2016b-Python-2.7.12/lib/plugins/LINUXAMD64/molfile
+Info) File loading in progress, please wait.
+Info) Using plugin gro for structure file ../../npt-nopr-77.gro
+Info) Using plugin gro for coordinates from file ../../npt-nopr-77.gro
+Info) Determining bond structure from distance search ...
+Info) Finished with coordinate file ../../npt-nopr-77.gro.
+Info) Analyzing structure ...
+Info)    Atoms: 98000
+Info)    Bonds: 65117
+Info)    Angles: 0  Dihedrals: 0  Impropers: 0  Cross-terms: 0
+Info)    Bondtypes: 0  Angletypes: 0  Dihedraltypes: 0  Impropertypes: 0
+Info)    Residues: 33059
+Info)    Waters: 32626
+Warning) Unusual bond between residues:  12 (protein) and 13 (none)
+Warning) Unusual bond between residues:  13 (none) and 14 (protein)
+Warning) Unusual bond between residues:  46 (protein) and 47 (none)
+Warning) Unusual bond between residues:  47 (none) and 48 (protein)
+Warning) Unusual bond between residues:  48 (protein) and 49 (none)
+Warning) Unusual bond between residues:  49 (none) and 50 (protein)
+Warning) Unusual bond between residues:  59 (protein) and 60 (none)
+Warning) Unusual bond between residues:  60 (none) and 61 (protein)
+Warning) Unusual bond between residues:  61 (protein) and 62 (none)
+Warning) Unusual bond between residues:  63 (none) and 64 (protein)
+Warning) Unusual bond between residues:  86 (protein) and 87 (none)
+Warning) Unusual bond between residues:  89 (none) and 90 (protein)
+Warning) Unusual bond between residues:  126 (protein) and 127 (none)
+Warning) Unusual bond between residues:  129 (none) and 130 (protein)
+Warning) Unusual bond between residues:  147 (protein) and 148 (none)
+Warning) Unusual bond between residues:  158 (protein) and 159 (none)
+Warning) Unusual bond between residues:  161 (protein) and 162 (none)
+Warning) Unusual bond between residues:  162 (none) and 163 (protein)
+Warning) Unusual bond between residues:  168 (protein) and 169 (none)
+Warning) Unusual bond between residues:  169 (none) and 170 (protein)
+Warning) Unusual bond between residues:  172 (protein) and 173 (none)
+Info)    Segments: 1
+Info)    Fragments: 32895   Protein: 17   Nucleic: 0
+dcdplugin) detected standard 32-bit DCD file of native endianness
+dcdplugin) CHARMM format DCD file (also NAMD 2.1 and later)
+Info) Using plugin dcd for coordinates from file ../../npt-nopr-77.unwrap.dcd
+Info) Coordinate I/O rate 42.3 frames/sec, 47 MB/sec, 23.7 sec
+Info) Finished with coordinate file ../../npt-nopr-77.unwrap.dcd.
+111
+439
+frame 439
+atomselect0
+atomselect1
+2697
+atomselect2
+84278
+ca index 2697
+nearby water index 84278
+84278 for 0 th water
+Info) Opened coordinate file 111.0.pdb for writing.
+Info) Finished with coordinate file 111.0.pdb.
+Info) VMD for LINUXAMD64, version 1.9.3 (December 13, 2017)
+Info) Exiting normally.
+DONE!

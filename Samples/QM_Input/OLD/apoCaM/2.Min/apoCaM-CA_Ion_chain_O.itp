@@ -1,0 +1,40 @@
+;
+;	File 'apoCaM-CA_Ion_chain_O.itp' was generated
+;	By user: pengzhi (1002)
+;	On host: acc.e.uh.edu
+;	At date: Tue Dec 18 17:23:58 2018
+
+;
+;	This is a include topology file
+;
+;	Created by:
+;	                    :-) GROMACS - gmx pdb2gmx, 2016.3 (-:
+;	
+;	Executable:   /usr/local/gromacs-gcc/bin/gmx
+;	Data prefix:  /usr/local/gromacs-gcc
+;	Working dir:  /home/pengzhi/RESP/apoCaM/2.Min
+;	Command line:
+;	  gmx pdb2gmx -ignh -ff amber99sb-ildn -f tem.pdb -o apoCaM-CA.gro -p apoCaM-CA.top -water tip3p
+;	Force field was read from the standard GROMACS share directory.
+;
+
+[ moleculetype ]
+; Name            nrexcl
+Ion_chain_O         3
+
+[ atoms ]
+;   nr       type  resnr residue  atom   cgnr     charge       mass  typeB    chargeB      massB
+; residue 149 CA  rtp CA   q +2.0
+     1         C0    149     CA     CA      1          2      40.08   ; qtot 2
+; residue 150 CA  rtp CA   q +2.0
+     2         C0    150     CA     CA      2          2      40.08   ; qtot 4
+; residue 151 CA  rtp CA   q +2.0
+     3         C0    151     CA     CA      3          2      40.08   ; qtot 6
+; residue 152 CA  rtp CA   q +2.0
+     4         C0    152     CA     CA      4          2      40.08   ; qtot 8
+
+; Include Position restraint file
+#ifdef POSRES_CA
+#include "posre_Ion_chain_O.itp"
+#endif
+

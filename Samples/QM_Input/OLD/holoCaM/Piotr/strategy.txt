@@ -1,0 +1,26 @@
+It seems that strategy would be:
+
+1) to prepare some number of configuration of the system;
+
+2) then try to run some clustering of those geometries, to understand the diversity of configuration states.
+
+   it could be done in terms of couple of distances (oxygens-Ca2+) and angles and dihedrals (between some selected subsets of group of atoms);
+
+3) then select representative members of those clusters;
+
+4) then run single point QM calculations with generating ESPs;
+
+5) then do i_resp charge fitting; and
+
+6) then using those geometrical parameters and charges design the machine learning stuff.
+
+
+But at the end, all of that seems to me to lead to some kind of look-up method. That means when we run molecular dynamics for a specific geometry of the loops
+
+we will have this and that set of atomic charges (and induced dipoles) derived from machine learning, instead of using continuous calculation of induced dipoles
+
+for consensus set of charges, which had been derived from multimolecular i_resp fitting. This is because in machine learning we already deal with a set of i_resp
+
+    charges (and possibly induced dipoles?) for a set of representative configurations and it seems that all of those parameters will be precomputed.
+
+    Given that - I don't understand right now what we want to achieve with this machine learning.

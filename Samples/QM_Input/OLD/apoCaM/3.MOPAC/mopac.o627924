@@ -1,0 +1,15 @@
+/bin/bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+
+
+
+           Your MOPAC executable, Version: 17.240L, has expired.
+           Please go to web-site: http://openmopac.net/Download_MOPAC_Executable_Step2.html to get a new version of MOPAC.
+           Do NOT request a new license key.  Academic license keys do not include time limits - the limit is in the program.
+           
+           Press (enter) to continue.
+
+          Tue Dec 18 23:39:21 2018  Job: 'm1' started successfully
+
+
+          MOPAC Job: "m1.mop" ended normally on Dec 18, 2018, at 23:41.
+

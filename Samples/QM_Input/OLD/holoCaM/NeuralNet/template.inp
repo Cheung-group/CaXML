@@ -1,0 +1,21 @@
+%Nproc=28
+%chk=holo5.chk
+%mem=80GB
+%NoSave
+#MP2(semidirect)/Gen scf=(tight,noincore) Test
+#IOP(5/87=12) Density=Current Pop=(MK,readradii) iop(6/33=2) iop(6/42=6)
+
+holo_loop_3_model_5 
+
+   0   1
+
+C O H 0
+aug-cc-pVTZ 
+****
+@/home/pzhang5/ca_ccpvtz_basisset.gbs/N
+
+Ca 1.70
+
+
+
+

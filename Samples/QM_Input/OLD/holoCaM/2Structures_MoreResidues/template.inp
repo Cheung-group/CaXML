@@ -1,0 +1,22 @@
+%Nproc=40
+%chk=holo5.chk
+%mem=80GB
+%NoSave
+#maxdisk=300GB
+#MP2(semidirect)/Gen scf=(tight,noincore) Test maxdisk=550GB
+#IOP(5/87=12) Density=Current Pop=(MK,readradii) iop(6/33=2) iop(6/42=6)
+
+holo_loop_3_model_5 
+
+   0   1
+
+C O H 0
+aug-cc-pVTZ 
+****
+@/project/cheung/pzhang5/SPQM_Ca/1node/ca_ccpvtz_basisset.gbs/N
+
+Ca 1.70
+
+
+
+

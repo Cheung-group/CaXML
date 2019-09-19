@@ -1,0 +1,14 @@
+sed 26,2436p -n apoCaM-CA_Protein_chain_X.itp  > a.itp
+sed 26,34p  -n apoCaM-CA_Ion_chain_X2.itp  >> a.itp
+awk -F: '/^[^;]/ {print $0}' a.itp  > a
+
+paste a charge | awk '{
+	printf("%6d%11s%7d%7s%7s%7d%11s%11s\n",$1,$2,$3,$4,$5,$6,$19,$8)
+	}'> b.itp
+
+sed 1,2262p -n b.itp > cam 	    # 2262
+sed 2263,2266p -n b.itp > ca	# 4
+
+rm -f a a.itp b.itp 
+
+# edit the itp files by replacing the charges 

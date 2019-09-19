@@ -1,0 +1,67 @@
+#!/bin/csh  -f
+
+################################################################################
+##  This script is to prepare the files for atomistic simulations using       ##
+##  GROMACS, including a short energy minimization, followed by NVT and NPT   ##
+##  equilibrations. 							      ##
+##  input : NNN.pdb em-vac-pme.mdp em-sol-pme.mdp nvt-pr-md.mdp npt-pr-md.mdp ##
+##  output: NNN.top *.gro em-vac.tpr em-sol.tpr				      ##
+##  By Pengzhi 5/12/2014						      ##
+################################################################################
+
+if ($#argv != 3) then
+        echo "Usage:   		./Prep.csh  pdb		FF                  CA" 
+        echo "Example: 		./Prep.csh  252		amber99sb-ildn      3"	
+	goto done
+    endif
+
+set pdb = $argv[1] 
+set FF = $argv[2]
+set ca = $argv[3]
+
+source /etc/profile.d/modules.csh
+module purge
+module load gromacs/5.0.6-gpu
+
+cp * $TMPDIR
+cd $TMPDIR
+
+
+gmx_mpi grompp -f em-vac-pme.mdp -c $pdb-PBC.gro -p $pdb.top -o em-vac.tpr
+mpirun -v -np 1 mdrun_mpi -v -deffnm em-vac
+
+## 3. fill the periodic box with water
+gmx_mpi solvate -cp em-vac.gro -cs spc216.gro -p $pdb.top -o $pdb-b4ion.gro
+gmx_mpi grompp -f em-sol-pme.mdp -c $pdb-b4ion.gro -p $pdb.top -o ion.tpr
+
+## 4. add ions 
+echo 15 > tem
+gmx_mpi genion -s ion.tpr -o $pdb-b4em.gro  -pname K -nname CL -neutral -conc 0.15 -p $pdb.top < tem 
+rm -f tem
+
+## 5. energy minimization for the solvent
+gmx_mpi grompp -f em-sol-pme.mdp -c $pdb-b4em.gro -p $pdb.top -o em-sol.tpr
+mpirun -v -np 20 mdrun_mpi -ntomp 5 -gpu_id 0011  -v -deffnm em-sol
+
+## 6. equilibration in nvt and protein position restrained
+
+# gradually increase temperature by 50
+cp em-sol.gro nvt-pr-start.gro
+foreach T ( `seq 50 50 300` )
+sed "s/300/$T/g" nvt-pr-md.mdp > nvt-pr-md-$T.mdp
+gmx_mpi grompp -f nvt-pr-md-$T.mdp -c nvt-pr-start.gro -p $pdb.top -o nvt-pr.tpr
+mpirun -v -np 20 mdrun_mpi -ntomp 5 -gpu_id 0011 -v -deffnm nvt-pr
+mv nvt-pr.gro nvt-pr-start.gro
+end
+mv nvt-pr-start.gro nvt-pr.gro
+
+## 7. equilibration in npt and protein position are restrained
+gmx_mpi grompp -f npt-pr-md.mdp -c nvt-pr.gro -t nvt-pr.cpt -p $pdb.top -o npt-pr.tpr
+mpirun -v -np 20 mdrun_mpi -ntomp 5 -gpu_id 0011  -v -deffnm npt-pr
+
+## 8. equilibration in npt and protein sidechains are flexible
+gmx_mpi grompp -f npt-nopr-md.mdp -c npt-pr.gro -t npt-pr.cpt -p $pdb.top -o npt-nopr.tpr
+mpirun -v -np 20 mdrun_mpi -ntomp 5 -gpu_id 0011  -v -deffnm npt-nopr
+cp -u * $SLURM_SUBMIT_DIR
+
+exit 0
