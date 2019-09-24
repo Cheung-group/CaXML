@@ -1,0 +1,2 @@
+Usage:   		./3gromacs.csh  pdb		FF                  CA
+Example: 		./3gromacs.csh  252		amber99sb-ildn      3

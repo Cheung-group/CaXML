@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#SBATCH -J traj0-ca3
+#SBATCH -o traj0-ca3.o%j	 
+#SBATCH -n 4 -c 5
+#SBATCH -N 1        
+#SBATCH -p gpu
+#SBATCH -t 24:00:00
+#SBATCH -w, --nodelist=compute-0-41
+
+chmod +x gromacs.csh
+./gromacs.csh 0 amber99sb-ildn 3

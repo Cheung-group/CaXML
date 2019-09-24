@@ -1,0 +1,20 @@
+#!/bin/bash
+
+#SBATCH -J mopac	 	    	# Job Name
+#SBATCH -o mopac.o%j		   	# Output and error file name (%j expands to jobID)
+#SBATCH -N 1	           		# Total number of nodes requested
+#SBATCH -n 1 -c 20           		# Total number of mpi tasks requested
+#SBATCH -t 4:00:00	     		# Run time (hh:mm:ss) - 1.5 hours
+
+module purge
+module add mopac
+#module add intel/ics-2015-64-bit
+
+
+cd $TMPDIR
+cp $SLURM_SUBMIT_DIR/m1.mop .
+
+echo "\n" > inp
+MOPAC2016.exe m1.mop < inp
+
+cp * $SLURM_SUBMIT_DIR

@@ -1,0 +1,11 @@
+1. Is it possible to left in the system only two asps and 1 glu?
+
+2. Instead of AA backbone – replace C-alpha by CH3 groups in them
+
+   We can think about fixing the position of those CH3 groups (or only C atoms in them)
+
+   and then optimize the rest.
+
+3. Add one water molecule close to Ca2+ ion in that complex?
+
+   Probably, with oxygen reoriented towards Ca2+, and located at some distance 2.0-3.0A.

@@ -1,0 +1,36 @@
+;
+;	File 'apoCaM-CA_Ion_chain_X2.itp' was generated
+;	By user: pengzhi (1002)
+;	On host: acc.e.uh.edu
+;	At date: Tue Dec 18 23:12:57 2018
+
+;
+;	This is a include topology file
+;
+;	Created by:
+;	                    :-) GROMACS - gmx pdb2gmx, 2016.3 (-:
+;	
+;	Executable:   /usr/local/gromacs-gcc/bin/gmx
+;	Data prefix:  /usr/local/gromacs-gcc
+;	Working dir:  /home/pengzhi/RESP/apoCaM/4.Equil
+;	Command line:
+;	  gmx pdb2gmx -ignh -ff amber99sb-ildn -f tem.pdb -o apoCaM-CA.gro -p apoCaM-CA.top -posrefc 1000000 -water tip3p
+;	Force field was read from the standard GROMACS share directory.
+;
+
+[ moleculetype ]
+; Name            nrexcl
+Ion_chain_X2        3
+
+[ atoms ]
+;   nr       type  resnr residue  atom   cgnr     charge       mass  typeB    chargeB      massB
+     1         C0    149     CA     CA      1   1.636067      40.08
+     2         C0    150     CA     CA      2   1.674891      40.08
+     3         C0    151     CA     CA      3   1.721617      40.08
+     4         C0    152     CA     CA      4   1.766929      40.08
+
+; Include Position restraint file
+#ifdef POSRES_CA
+#include "posre_Ion_chain_X2.itp"
+#endif
+
