@@ -40,7 +40,6 @@ for i in structure.get_atoms():
 output.write("Cachg\n")
 
 # Print the coordinates
-
 for struct in CaMKII + holoCaM + Ng:
     prot = struct.split('/')[1].split('_')[0]
     index = struct.split('/')[1].split("_")[2].split('.pdb')[0]
