@@ -55,11 +55,33 @@ testsize = 0.3
 rstate = random.randrange(1,999999999,1)
 X_train, X_test, y_train, y_test = train_test_split(feature_vectors, correct_Pattern_labels, test_size = testsize, random_state = rstate)
 
+from sklearn.decomposition import PCA
+
+
+#############################################################################
+# Compute a PCA (anticlines) on the anticlines dataset (treated as unlabeled
+# dataset): unsupervised feature extraction / dimensionality reduction
+from time import time
+n_components = 50
+
+t0 = time()
+pca = PCA(n_components=n_components, svd_solver='randomized',
+                   whiten=True).fit(X_train)
+print("done in %0.3fs" % (time() - t0))
+
+print("Projecting the input data on the eigen-anticlines orthonormal basis")
+t0 = time()
+X_train_pca = pca.transform(X_train)
+X_test_pca = pca.transform(X_test)
+print("done in %0.3fs" % (time() - t0))
+
+#############################################################################
+
 # Estimate the score on the entire dataset, with no missing values
 rstate = random.randrange(1,999999999,1)
-estimator = RandomForestRegressor(random_state = rstate, n_estimators = 10000, n_jobs = 12)
-estimator.fit(X_train, y_train)
-pred = estimator.predict(X_test)
+estimator = RandomForestRegressor(random_state = rstate, n_estimators = 100, n_jobs = 12)
+estimator.fit(X_train_pca, y_train)
+pred = estimator.predict(X_test_pca)
 
 from sklearn.model_selection import cross_val_score
 cvscore = cross_val_score(estimator, X_train, y_train, cv=3)
