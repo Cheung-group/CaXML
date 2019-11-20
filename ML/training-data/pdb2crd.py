@@ -4,9 +4,9 @@
 #from Bio import PDB
 from Bio.PDB import *
 import glob
-CaMKII = glob.glob("input.loop3/CaMKII_loop3_*.pdb")
-holoCaM = glob.glob("input.loop3/holoCaM_loop3_*.pdb")
-Ng=glob.glob("input.loop3/Ng-*_loop3_*.pdb")
+CaMKII = glob.glob("input.loop3/CaMKII_loop3_*.pdb.aligned")
+holoCaM = glob.glob("input.loop3/holoCaM_loop3_*.pdb.aligned")
+Ng=glob.glob("input.loop3/Ng-*_loop3_*.pdb.aligned")
 loop3Size = 176
 
 files = glob.glob("output.loop3/*.txt")
@@ -18,7 +18,7 @@ for chgFile in files:
             line = line.strip().split()
             charge[(prot,line[0])]=line[1]
 
-output = open("TestData.txt", 'w+')
+output = open("crdData.txt", 'w+')
 
 def count(gen):
     return sum(1 for _ in gen.get_atoms())
@@ -31,8 +31,10 @@ if count(structure) != loop3Size:
 
 # Print the header
 for i in structure.get_atoms():
-    par=i.name+'-'+str(i.full_id[3][1])
-    output.write("%s," % par)
+    if i.mass < 1.1:
+        continue
+    #par=i.name+'-'+str(i.full_id[3][1])
+    #output.write("%s," % par)
     for j in range(3):
         par = i.name + '-' + str(i.full_id[3][1]) + chr(j+88)
         val = i.get_coord()[j]
@@ -51,9 +53,11 @@ for struct in CaMKII + holoCaM + Ng:
             print("Error in atom number!\n")
             raise SystemExit(1)
         for i in structure.get_atoms():
-            output.write("%f," % i.mass)
+            #output.write("%f," % i.mass)
+            if i.mass < 1.1:
+                continue
             for j in range(3):
-                par = i.name + '-' + str(i.full_id[3][1]) + chr(j+88)
+                #par = i.name + '-' + str(i.full_id[3][1]) + chr(j+88)
                 val = i.get_coord()[j]
                 output.write("%s," % val)
         output.write("%s\n" % cach)

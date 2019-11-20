@@ -16,7 +16,7 @@ for chgFile in files:
             line = line.strip().split()
             charge[(prot,line[0])] = line[1]
 
-output = open("distData.txt", 'w+')
+output = open("diheData.txt", 'w+')
 
 
 def count(gen):
@@ -71,7 +71,7 @@ for struct in CaMKII + holoCaM + Ng:
             resid = res.get_id()[1]
             for atom in res:
                     if atom.mass > 1.1:
-                        val = 1.0/np.linalg.norm(atom.coord - calAtom.coord)
+                        val = 1.0*int(atom.mass)/np.linalg.norm(atom.coord - calAtom.coord)
                         output.write("%f," % val)
                         COM = COM + atom.coord*atom.mass
                         mass = mass + atom.mass

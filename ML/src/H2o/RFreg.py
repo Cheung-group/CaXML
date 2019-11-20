@@ -38,18 +38,18 @@ var_df = pd.DataFrame(model.varimp(),
 print (var_df.shape)
 var_df.head(10)
 
-model.varimp_plot(num_of_features=10)
+#model.varimp_plot(num_of_features=10)
 
-plt.rcdefaults()
-fig, ax = plt.subplots()
+#plt.rcdefaults()
+#fig, ax = plt.subplots()
 variables = model._model_json['output']['variable_importances']['variable']
 y_pos = np.arange(len(variables))
 scaled_importance = model._model_json['output']['variable_importances']['scaled_importance']
-ax.barh(y_pos, scaled_importance, align='center', color='green', ecolor='black')
-ax.set_yticks(y_pos)
-ax.set_yticklabels(variables)
-ax.invert_yaxis()
-ax.set_xlabel('Scaled Importance')
-ax.set_title('Variable Importance')
-plt.show()
+#ax.barh(y_pos, scaled_importance, align='center', color='green', ecolor='black')
+#ax.set_yticks(y_pos)
+#ax.set_yticklabels(variables)
+#ax.invert_yaxis()
+#ax.set_xlabel('Scaled Importance')
+#ax.set_title('Variable Importance')
+#plt.show()
 
