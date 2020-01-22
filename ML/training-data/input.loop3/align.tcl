@@ -1,8 +1,6 @@
 # align.tcl: align the crd with given native structure
-# usage: vmd -dispdev text -e align.tcl -agrs $Temp
+# usage: vmd -dispdev text -e align.tcl -agrs ref.pdb ori.pdb
 # author: Pengzhi Zhang, 7/27/2011
-
-set temp [lindex $argv 0]
 
 set crdfile0 [lindex $argv 0]
 set crdfile1 [lindex $argv 1]
