@@ -1,0 +1,26 @@
+Running on host compute-1-26.local
+Time is Wed Feb 26 20:54:27 CST 2020
+Directory is /uhpc/cheung/pzhang5/SPQM_Ca/WholeLoops/NNClusterSymmetryFunctionAsFeatures/MD_afterEM/loop1.cluster100
+number of nodes used 1
+This jobs runs on the following processors:
+ 
+  Amber 10/11 i_RESP demo: 2 stage fit on 3 conformations with polarization 
+ 
+convert the GAUSSIAN output for i-resp:
+# atoms:   192 # esp: 31899
+generating the input for i-resp stage 1:
+there are a total of 192 atoms
+3 water molecules
+generating initial charge file:
+A total of 192 atoms and 3 water.
+RESP stage 1:
+
+  >>>> External file containing polarizabilities is not available.
+  >>>> An internal database will be used instead
+
+generating the input for i-resp stage 2:
+RESP stage 2:
+Extracting charges
+ Nmol:    1; no. of atoms:  192
+No errors detected
+DONE
