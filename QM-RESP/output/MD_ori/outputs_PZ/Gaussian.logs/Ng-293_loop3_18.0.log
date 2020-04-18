@@ -1,0 +1,791 @@
+ Entering Gaussian System, Link 0=g16
+ Initial command:
+ /home1/apps/gaussian/16rA.03/g16/l1.exe "/scratch/01990/pengzhi/4361956/Gau-256595.inp" -scrdir="/scratch/01990/pengzhi/4361956/"
+ Entering Link 1 = /home1/apps/gaussian/16rA.03/g16/l1.exe PID=    256596.
+  
+ Copyright (c) 1988,1990,1992,1993,1995,1998,2003,2009,2016,
+            Gaussian, Inc.  All Rights Reserved.
+  
+ This is part of the Gaussian(R) 16 program.  It is based on
+ the Gaussian(R) 09 system (copyright 2009, Gaussian, Inc.),
+ the Gaussian(R) 03 system (copyright 2003, Gaussian, Inc.),
+ the Gaussian(R) 98 system (copyright 1998, Gaussian, Inc.),
+ the Gaussian(R) 94 system (copyright 1995, Gaussian, Inc.),
+ the Gaussian 92(TM) system (copyright 1992, Gaussian, Inc.),
+ the Gaussian 90(TM) system (copyright 1990, Gaussian, Inc.),
+ the Gaussian 88(TM) system (copyright 1988, Gaussian, Inc.),
+ the Gaussian 86(TM) system (copyright 1986, Carnegie Mellon
+ University), and the Gaussian 82(TM) system (copyright 1983,
+ Carnegie Mellon University). Gaussian is a federally registered
+ trademark of Gaussian, Inc.
+  
+ This software contains proprietary and confidential information,
+ including trade secrets, belonging to Gaussian, Inc.
+  
+ This software is provided under written license and may be
+ used, copied, transmitted, or stored only in accord with that
+ written license.
+  
+ The following legend is applicable only to US Government
+ contracts under FAR:
+  
+                    RESTRICTED RIGHTS LEGEND
+  
+ Use, reproduction and disclosure by the US Government is
+ subject to restrictions as set forth in subparagraphs (a)
+ and (c) of the Commercial Computer Software - Restricted
+ Rights clause in FAR 52.227-19.
+  
+ Gaussian, Inc.
+ 340 Quinnipiac St., Bldg. 40, Wallingford CT 06492
+  
+  
+ ---------------------------------------------------------------
+ Warning -- This program may not be used in any manner that
+ competes with the business of Gaussian, Inc. or will provide
+ assistance to any competitor of Gaussian, Inc.  The licensee
+ of this program is prohibited from giving any competitor of
+ Gaussian, Inc. access to this program.  By using this program,
+ the user acknowledges that Gaussian, Inc. is engaged in the
+ business of creating and licensing software in the field of
+ computational chemistry and represents and warrants to the
+ licensee that it is not a competitor of Gaussian, Inc. and that
+ it will not use this program in any manner prohibited above.
+ ---------------------------------------------------------------
+  
+
+ Cite this work as:
+ Gaussian 16, Revision A.03,
+ M. J. Frisch, G. W. Trucks, H. B. Schlegel, G. E. Scuseria, 
+ M. A. Robb, J. R. Cheeseman, G. Scalmani, V. Barone, 
+ G. A. Petersson, H. Nakatsuji, X. Li, M. Caricato, A. V. Marenich, 
+ J. Bloino, B. G. Janesko, R. Gomperts, B. Mennucci, H. P. Hratchian, 
+ J. V. Ortiz, A. F. Izmaylov, J. L. Sonnenberg, D. Williams-Young, 
+ F. Ding, F. Lipparini, F. Egidi, J. Goings, B. Peng, A. Petrone, 
+ T. Henderson, D. Ranasinghe, V. G. Zakrzewski, J. Gao, N. Rega, 
+ G. Zheng, W. Liang, M. Hada, M. Ehara, K. Toyota, R. Fukuda, 
+ J. Hasegawa, M. Ishida, T. Nakajima, Y. Honda, O. Kitao, H. Nakai, 
+ T. Vreven, K. Throssell, J. A. Montgomery, Jr., J. E. Peralta, 
+ F. Ogliaro, M. J. Bearpark, J. J. Heyd, E. N. Brothers, K. N. Kudin, 
+ V. N. Staroverov, T. A. Keith, R. Kobayashi, J. Normand, 
+ K. Raghavachari, A. P. Rendell, J. C. Burant, S. S. Iyengar, 
+ J. Tomasi, M. Cossi, J. M. Millam, M. Klene, C. Adamo, R. Cammi, 
+ J. W. Ochterski, R. L. Martin, K. Morokuma, O. Farkas, 
+ J. B. Foresman, and D. J. Fox, Gaussian, Inc., Wallingford CT, 2016.
+ 
+ ******************************************
+ Gaussian 16:  ES64L-G16RevA.03 25-Dec-2016
+                19-Sep-2019 
+ ******************************************
+ %chk=Ng-293_loop3_18.0.chk
+ %nprocshared=48
+ Will use up to   48 processors via shared memory.
+ %mem=10GB
+ %nosave
+ ----------------------------------------------------------------------
+ #b3lyp/svp scf=(tight,noincore,xqc) Test #IOP(5/87=12) Density=Current
+  Pop=(MK,readradii) iop(6/33=2) iop(6/42=6)
+ ----------------------------------------------------------------------
+ 1/30=1,38=1,172=1/1;
+ 2/12=2,17=6,18=5,40=1/2;
+ 3/5=18,7=101,11=2,25=1,30=1,74=-5/1,2,3;
+ 4//1;
+ 5/5=4,8=3,13=1,32=2,38=5,87=12/2,8;
+ 6/7=2,8=2,9=2,10=2,15=8,20=101,22=-1,28=1,33=2,42=6/1,2;
+ 99/5=1,9=1/99;
+ -----------------
+ Ng-293_loop3_18.0
+ -----------------
+ Symbolic Z-matrix:
+ Charge =  0 Multiplicity = 1
+ C                     69.48     14.49     13.64 
+ C                     70.06     14.94     12.3 
+ O                     70.6      16.04     12.25 
+ H                     68.463    14.127    13.491 
+ H                     70.095    13.69     14.052 
+ H                     69.467    15.332    14.332 
+ N                     70.08     14.08     11.28 
+ C                     70.67     14.14     9.96 
+ C                     70.3      15.32     9.08 
+ O                     71.16     15.72     8.31 
+ C                     72.18     13.95     10.12 
+ C                     72.64     12.85     11.06 
+ O                     73.26     13.12     12.11 
+ O                     72.56     11.67     10.65 
+ H                     69.58     13.23     11.51 
+ H                     70.26     13.29     9.41 
+ H                     72.61     14.91     10.42 
+ H                     72.58     13.7      9.14 
+ N                     69.08     15.87     9.06 
+ C                     68.57     16.73     8. 
+ C                     68.71     18.22     8.24 
+ O                     69.08     18.92     7.3 
+ C                     67.13     16.41     7.62 
+ C                     66.77     15.       7.14 
+ C                     66.98     14.99     5.63 
+ C                     67.03     13.61     4.99 
+ N                     67.47     13.86     3.61 
+ H                     68.36     15.5      9.66 
+ H                     69.11     16.53     7.08 
+ H                     66.8      17.15     6.89 
+ H                     66.42     16.64     8.42 
+ H                     65.75     14.71     7.38 
+ H                     67.51     14.3      7.54 
+ H                     67.83     15.58     5.3 
+ H                     66.15     15.59     5.24 
+ H                     66.06     13.12     5.09 
+ H                     67.78     13.       5.5 
+ H                     67.52     13.       3.08 
+ H                     66.85     14.51     3.15 
+ H                     68.4      14.24     3.55 
+ N                     68.45     18.69     9.46 
+ C                     68.57     20.09     9.83 
+ C                     69.       20.34     11.27 
+ O                     69.59     19.44     11.86 
+ C                     67.3      20.85     9.47 
+ C                     67.57     22.21     8.84 
+ O                     67.92     23.13     9.62 
+ O                     67.32     22.43     7.64 
+ H                     68.1      18.09     10.2 
+ H                     69.33     20.49     9.16 
+ H                     66.75     20.98     10.4 
+ H                     66.72     20.22     8.8 
+ N                     68.99     21.59     11.72 
+ C                     69.47     21.97     13.04 
+ C                     69.34     23.47     13.27 
+ O                     68.95     24.23     12.38 
+ H                     68.63     22.29     11.08 
+ H                     70.5      21.66     13.21 
+ H                     68.9      21.41     13.77 
+ N                     69.64     23.89     14.5 
+ C                     69.44     25.29     14.83 
+ C                     70.69     26.06     15.23 
+ O                     70.69     27.2      15.68 
+ C                     68.37     25.34     15.92 
+ C                     67.23     24.34     15.81 
+ N                     65.96     24.72     15.95 
+ O                     67.44     23.14     15.95 
+ H                     69.82     23.2      15.21 
+ H                     69.07     25.86     13.97 
+ H                     67.92     26.33     15.95 
+ H                     68.84     25.09     16.87 
+ H                     65.7      25.69     16.1 
+ H                     65.23     24.02     15.96 
+ N                     71.89     25.53     15. 
+ C                     73.17     26.19     15.1 
+ C                     73.47     26.66     16.52 
+ O                     73.27     25.89     17.46 
+ H                     71.86     24.62     14.57 
+ H                     73.05     27.12     14.55 
+ H                     73.96     25.53     14.73 
+ N                     73.91     27.89     16.8 
+ C                     73.94     28.41     18.15 
+ C                     72.59     28.69     18.79 
+ O                     72.4      29.39     19.78 
+ C                     74.84     27.74     19.19 
+ C                     76.27     27.7      18.72 
+ C                     76.67     26.7      17.83 
+ C                     77.18     28.7      19.1 
+ C                     78.       26.68     17.4 
+ C                     78.49     28.72     18.62 
+ C                     78.91     27.69     17.76 
+ O                     80.21     27.67     17.34 
+ H                     74.06     28.59     16.09 
+ H                     74.5      29.34     18.17 
+ H                     74.47     26.73     19.36 
+ H                     74.86     28.29     20.14 
+ H                     75.93     25.94     17.63 
+ H                     77.02     29.39     19.92 
+ H                     78.28     25.83     16.79 
+ H                     79.3      29.37     18.91 
+ H                     80.74     28.4      17.68 
+ N                     71.48     28.18     18.25 
+ C                     70.11     28.17     18.73 
+ C                     69.55     29.58     18.64 
+ O                     68.99     29.96     17.61 
+ C                     69.92     27.33     19.99 
+ C                     70.4      25.91     19.7 
+ C                     68.43     27.34     20.35 
+ C                     70.52     24.98     20.91 
+ H                     71.63     27.6      17.44 
+ H                     69.58     27.55     18. 
+ H                     70.52     27.81     20.76 
+ H                     71.42     25.91     19.33 
+ H                     69.75     25.52     18.91 
+ H                     68.08     28.34     20.59 
+ H                     67.82     26.94     19.54 
+ H                     68.26     26.73     21.23 
+ H                     70.87     23.98     20.68 
+ H                     71.24     25.38     21.63 
+ H                     69.54     25.       21.39 
+ N                     69.62     30.44     19.66 
+ C                     69.28     31.84     19.58 
+ C                     67.8      32.14     19.43 
+ O                     67.36     33.17     18.9 
+ C                     69.76     32.56     20.84 
+ O                     71.06     32.19     21.24 
+ H                     70.18     30.08     20.42 
+ H                     69.84     32.27     18.75 
+ H                     69.18     32.41     21.75 
+ H                     69.75     33.64     20.68 
+ H                     71.68     32.11     20.51 
+ N                     67.01     31.17     19.89 
+ C                     65.59     31.1      19.61 
+ C                     65.25     30.7      18.18 
+ O                     64.09     30.86     17.8 
+ C                     64.87     32.35     20.11 
+ H                     67.43     30.39     20.37 
+ H                     65.23     30.27     20.22 
+ H                     63.82     32.1      20.29 
+ H                     65.31     32.81     20.99 
+ H                     64.85     33.07     19.29 
+ N                     66.21     30.36     17.32 
+ C                     65.96     30.01     15.93 
+ C                     65.32     28.66     15.62 
+ O                     65.76     27.65     16.16 
+ C                     67.25     30.22     15.14 
+ H                     67.19     30.42     17.55 
+ H                     65.27     30.67     15.4 
+ H                     67.75     31.15     15.37 
+ H                     67.93     29.38     15.24 
+ H                     67.04     30.19     14.07 
+ N                     64.29     28.61     14.76 
+ C                     63.89     27.38     14.11 
+ C                     63.13     26.35     14.94 
+ O                     62.79     25.24     14.53 
+ C                     65.       26.71     13.31 
+ C                     65.51     27.49     12.1 
+ C                     66.67     26.69     11.52 
+ O                     67.85     26.99     11.8 
+ O                     66.46     25.78     10.68 
+ H                     63.79     29.44     14.47 
+ H                     63.11     27.68     13.41 
+ H                     64.64     25.77     12.9 
+ H                     65.89     26.5      13.89 
+ H                     65.74     28.53     12.35 
+ H                     64.67     27.45     11.41 
+ N                     62.77     26.73     16.16 
+ C                     62.52     25.72     17.18 
+ H                     61.497    25.355    17.086 
+ H                     63.215    24.891    17.049 
+ H                     62.659    26.159    18.168 
+ H                     62.84     27.69     16.45 
+ Ca                    69.07     25.39     9.92 
+ O                     67.65     25.21     7.69 
+ H                     67.5      25.59     6.83 
+ H                     67.49     24.27     7.57 
+ 
+ Stoichiometry    C54H83CaN15O23
+ Framework group  C1[X(C54H83CaN15O23)]
+ Deg. of freedom   522
+ Full point group                 C1      NOp   1
+ Largest Abelian subgroup         C1      NOp   1
+ Largest concise Abelian subgroup C1      NOp   1
+                         Standard orientation:                         
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1          6           0        8.267825    2.296646    4.753310
+      2          6           0        8.668614    2.387776    3.281724
+      3          8           0        7.788177    2.626421    2.461981
+      4          1           0        8.686470    1.388521    5.187250
+      5          1           0        8.650504    3.165462    5.288738
+      6          1           0        7.181160    2.269535    4.833445
+      7          7           0        9.962033    2.340324    2.957356
+      8          6           0       10.666200    2.536289    1.708417
+      9          6           0       10.241672    1.687507    0.523915
+     10          8           0       10.338116    2.200917   -0.580444
+     11          6           0       10.670221    4.037423    1.411126
+     12          6           0       10.991504    4.967663    2.567253
+     13          8           0       10.134102    5.759433    3.011956
+     14          8           0       12.189561    5.059145    2.918239
+     15          1           0       10.533146    2.128124    3.766183
+     16          1           0       11.691649    2.205633    1.887921
+     17          1           0        9.701737    4.296361    0.973530
+     18          1           0       11.432683    4.215428    0.656231
+     19          7           0        9.853577    0.411324    0.633631
+     20          6           0        9.798693   -0.541449   -0.467510
+     21          6           0        8.447398   -0.692635   -1.137170
+     22          8           0        8.419017   -0.752214   -2.364421
+     23          6           0       10.333723   -1.916137   -0.087541
+     24          6           0       11.769251   -2.052114    0.430983
+     25          6           0       12.655566   -2.245587   -0.794298
+     26          6           0       14.145556   -2.045757   -0.556607
+     27          7           0       14.736774   -2.049984   -1.902320
+     28          1           0        9.827438   -0.021991    1.542947
+     29          1           0       10.480331   -0.228169   -1.251874
+     30          1           0       10.175633   -2.586584   -0.933063
+     31          1           0        9.704508   -2.426931    0.647428
+     32          1           0       11.900712   -2.878792    1.124828
+     33          1           0       12.073459   -1.092380    0.859898
+     34          1           0       12.340516   -1.671109   -1.660450
+     35          1           0       12.429709   -3.263948   -1.130347
+     36          1           0       14.519099   -2.815680    0.120654
+     37          1           0       14.312049   -1.068873   -0.095436
+     38          1           0       15.741579   -1.941896   -1.861300
+     39          1           0       14.503783   -2.901254   -2.391763
+     40          1           0       14.430221   -1.281699   -2.475613
+     41          7           0        7.360980   -0.727904   -0.365580
+     42          6           0        6.006951   -0.843206   -0.879983
+     43          6           0        4.943917   -0.123509   -0.059620
+     44          8           0        5.303972    0.791301    0.675012
+     45          6           0        5.650321   -2.303275   -1.127192
+     46          6           0        4.909851   -2.528736   -2.438784
+     47          8           0        3.695043   -2.210720   -2.458966
+     48          8           0        5.445219   -3.126057   -3.391406
+     49          1           0        7.425079   -0.724726    0.647328
+     50          1           0        6.048416   -0.397538   -1.873039
+     51          1           0        5.019811   -2.607129   -0.293868
+     52          1           0        6.574497   -2.875418   -1.099766
+     53          7           0        3.669091   -0.305161   -0.386607
+     54          6           0        2.569458    0.400118    0.254166
+     55          6           0        1.225918   -0.009095   -0.335109
+     56          8           0        1.147747   -0.782024   -1.293373
+     57          1           0        3.491660   -0.971071   -1.131108
+     58          1           0        2.682420    1.481646    0.195544
+     59          1           0        2.615196    0.185198    1.313938
+     60          7           0        0.153387    0.494781    0.277332
+     61          6           0       -1.165349    0.069094   -0.156980
+     62          6           0       -2.069110    1.166720   -0.699042
+     63          8           0       -3.255324    1.019900   -0.970043
+     64          6           0       -1.805809   -0.662116    1.022275
+     65          6           0       -0.890215   -1.527982    1.872959
+     66          7           0       -1.232824   -2.770089    2.214558
+     67          8           0       -0.009405   -1.016990    2.556158
+     68          1           0        0.288307    1.007838    1.132417
+     69          1           0       -1.108165   -0.633312   -0.996478
+     70          1           0       -2.607623   -1.305289    0.666013
+     71          1           0       -2.178352    0.083380    1.723238
+     72          1           0       -2.095889   -3.199313    1.895363
+     73          1           0       -0.645468   -3.289825    2.853217
+     74          7           0       -1.549768    2.354517   -1.004365
+     75          6           0       -2.189632    3.427715   -1.727428
+     76          6           0       -3.414092    3.969426   -0.996301
+     77          8           0       -3.335367    4.204573    0.209936
+     78          1           0       -0.560234    2.425184   -0.831943
+     79          1           0       -2.614792    2.956966   -2.610285
+     80          1           0       -1.467835    4.224837   -1.927940
+     81          7           0       -4.589621    4.170051   -1.598614
+     82          6           0       -5.803478    4.428876   -0.854732
+     83          6           0       -6.355611    3.264934   -0.047956
+     84          8           0       -7.495717    3.182248    0.398721
+     85          6           0       -5.904967    5.698082   -0.006607
+     86          6           0       -5.649679    6.925682   -0.840410
+     87          6           0       -4.333328    7.300667   -1.120957
+     88          6           0       -6.715196    7.646143   -1.404422
+     89          6           0       -4.113994    8.440294   -1.900279
+     90          6           0       -6.498143    8.744762   -2.236782
+     91          6           0       -5.175865    9.153241   -2.485032
+     92          8           0       -4.961290   10.267345   -3.246301
+     93          1           0       -4.744824    3.964040   -2.573330
+     94          1           0       -6.588209    4.743816   -1.535842
+     95          1           0       -5.174024    5.629179    0.797678
+     96          1           0       -6.908024    5.836575    0.417769
+     97          1           0       -3.573850    6.730835   -0.607455
+     98          1           0       -7.748575    7.549689   -1.093096
+     99          1           0       -3.078837    8.740879   -2.005626
+    100          1           0       -7.224033    9.429077   -2.646046
+    101          1           0       -5.770885   10.683660   -3.563535
+    102          7           0       -5.585199    2.201973    0.197769
+    103          6           0       -5.808125    1.044792    1.045493
+    104          6           0       -6.875214    0.170092    0.408297
+    105          8           0       -6.557567   -0.710664   -0.393121
+    106          6           0       -5.860903    1.388725    2.531503
+    107          6           0       -4.559805    2.091930    2.910380
+    108          6           0       -6.025163    0.083217    3.317930
+    109          6           0       -4.521898    2.734302    4.299380
+    110          1           0       -4.646300    2.266195   -0.161875
+    111          1           0       -4.858681    0.501606    1.004195
+    112          1           0       -6.723153    2.040336    2.654908
+    113          1           0       -4.380400    2.951920    2.273566
+    114          1           0       -3.756776    1.367417    2.740304
+    115          1           0       -6.961978   -0.413918    3.082695
+    116          1           0       -5.203788   -0.606684    3.124076
+    117          1           0       -6.041771    0.293856    4.381300
+    118          1           0       -3.590951    3.234037    4.542284
+    119          1           0       -5.294530    3.503920    4.386139
+    120          1           0       -4.783502    1.935785    4.995896
+    121          7           0       -8.171959    0.301915    0.701512
+    122          6           0       -9.244955   -0.361630    0.001237
+    123          6           0       -9.344934   -1.857498    0.236365
+    124          8           0       -9.850897   -2.646174   -0.574432
+    125          6           0      -10.584419    0.249359    0.412248
+    126          8           0      -10.567850    1.657693    0.468978
+    127          1           0       -8.347363    1.107833    1.285062
+    128          1           0       -9.126489   -0.152002   -1.061505
+    129          1           0      -10.975586   -0.023018    1.391942
+    130          1           0      -11.363813   -0.051571   -0.290665
+    131          1           0      -10.097721    2.067604   -0.262221
+    132          7           0       -8.800985   -2.253978    1.386809
+    133          6           0       -8.527601   -3.641772    1.701435
+    134          6           0       -7.352421   -4.239783    0.938654
+    135          8           0       -7.216024   -5.463072    0.962294
+    136          6           0       -9.805530   -4.476015    1.658553
+    137          1           0       -8.467178   -1.554912    2.031075
+    138          1           0       -8.200803   -3.628543    2.742410
+    139          1           0       -9.670113   -5.355677    2.295152
+    140          1           0      -10.710231   -3.941164    1.932507
+    141          1           0       -9.906088   -4.874626    0.647516
+    142          7           0       -6.608258   -3.484769    0.130585
+    143          6           0       -5.500320   -3.999579   -0.659696
+    144          6           0       -4.202727   -4.367724    0.053692
+    145          8           0       -3.718810   -3.581076    0.861349
+    146          6           0       -5.254333   -3.044293   -1.825551
+    147          1           0       -6.827957   -2.520143   -0.064678
+    148          1           0       -5.697742   -4.936988   -1.183995
+    149          1           0       -6.160063   -2.730992   -2.324846
+    150          1           0       -4.658635   -2.186416   -1.530272
+    151          1           0       -4.594488   -3.512453   -2.557215
+    152          7           0       -3.619620   -5.545360   -0.222279
+    153          6           0       -2.228474   -5.804699    0.082441
+    154          6           0       -1.854194   -6.062957    1.538675
+    155          8           0       -0.703154   -6.231413    1.941827
+    156          6           0       -1.258112   -4.817092   -0.553192
+    157          6           0       -1.197959   -4.834152   -2.079197
+    158          6           0       -0.253368   -3.712378   -2.493165
+    159          8           0       -0.703937   -2.602803   -2.849018
+    160          8           0        0.983382   -3.917067   -2.572860
+    161          1           0       -4.102399   -6.281588   -0.720168
+    162          1           0       -2.031609   -6.787368   -0.346518
+    163          1           0       -0.243851   -5.043641   -0.234992
+    164          1           0       -1.461435   -3.783337   -0.302974
+    165          1           0       -2.194430   -4.794221   -2.529144
+    166          1           0       -0.729709   -5.791780   -2.295969
+    167          7           0       -2.864113   -6.171143    2.393519
+    168          6           0       -2.636337   -5.906522    3.808120
+    169          1           0       -2.248124   -6.805506    4.287397
+    170          1           0       -1.914553   -5.097196    3.915111
+    171          1           0       -3.576297   -5.620901    4.280436
+    172          1           0       -3.813427   -6.252288    2.072866
+    173         20           0        1.648348   -1.577680   -3.848355
+    174          8           0        3.154867   -3.447084   -4.969706
+    175          1           0        3.357618   -3.899278   -5.782671
+    176          1           0        3.991581   -3.410733   -4.498337
+ ---------------------------------------------------------------------
+ Rotational constants (GHZ):           0.0207435           0.0074451           0.0061937
+ Standard basis: SVP (5D, 7F)
+ There are  1809 symmetry adapted cartesian basis functions of A   symmetry.
+ There are  1717 symmetry adapted basis functions of A   symmetry.
+  1717 basis functions,  2922 primitive gaussians,  1809 cartesian basis functions
+   358 alpha electrons      358 beta electrons
+       nuclear repulsion energy     18768.6947338883 Hartrees.
+ NAtoms=  176 NActive=  176 NUniq=  176 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=T Big=T
+ Integral buffers will be    131072 words long.
+ Raffenetti 2 integral format.
+ Two-electron integral symmetry is turned on.
+ One-electron integrals computed using PRISM.
+ NBasis=  1717 RedAO= T EigKep=  2.76D-04  NBF=  1717
+ NBsUse=  1717 1.00D-06 EigRej= -1.00D+00 NBFU=  1717
+ ExpMin= 1.98D-02 ExpMax= 3.51D+04 ExpMxC= 5.28D+03 IAcc=3 IRadAn=         5 AccDes= 0.00D+00
+ Harris functional with IExCor=  402 and IRadAn=       5 diagonalized for initial guess.
+ HarFok:  IExCor=  402 AccDes= 0.00D+00 IRadAn=         5 IDoV= 1 UseB2=F ITyADJ=14
+ ICtDFT=  3500011 ScaDFX=  1.000000  1.000000  1.000000  1.000000
+ FoFCou: FMM=F IPFlag=           0 FMFlag=      100000 FMFlg1=        2001
+         NFxFlg=           0 DoJE=T BraDBF=F KetDBF=T FulRan=T
+         wScrn=  0.000000 ICntrl=       500 IOpCl=  0 I1Cent=   200000004 NGrid=           0
+         NMat0=    1 NMatS0=      1 NMatT0=    0 NMatD0=    1 NMtDS0=    0 NMtDT0=    0
+ Petite list used in FoFCou.
+ Requested convergence on RMS density matrix=1.00D-08 within  32 cycles.
+ Requested convergence on MAX density matrix=1.00D-06.
+ Requested convergence on             energy=1.00D-06.
+ No special actions if energy rises.
+ EnCoef did     2 forward-backward iterations
+ EnCoef did     3 forward-backward iterations
+ EnCoef did     3 forward-backward iterations
+ EnCoef did     4 forward-backward iterations
+ EnCoef did    14 forward-backward iterations
+ EnCoef did   100 forward-backward iterations
+ EnCoef did   100 forward-backward iterations
+ EnCoef did   100 forward-backward iterations
+ EnCoef did   100 forward-backward iterations
+ EnCoef did   100 forward-backward iterations
+ Rare condition: small coef for last iteration:  0.444D-15
+ EnCoef did   100 forward-backward iterations
+ Rare condition: small coef for last iteration:  0.000D+00
+ EnCoef did   100 forward-backward iterations
+ EnCoef did   100 forward-backward iterations
+ EnCoef did   100 forward-backward iterations
+ Rare condition: small coef for last iteration:  0.358D-15
+ Restarting incremental Fock formation.
+ EnCoef did   100 forward-backward iterations
+ Rare condition: small coef for last iteration: -0.819D-16
+ EnCoef did   100 forward-backward iterations
+ EnCoef did   100 forward-backward iterations
+ EnCoef did   100 forward-backward iterations
+ Rare condition: small coef for last iteration: -0.789D-15
+ EnCoef did    62 forward-backward iterations
+ EnCoef did   100 forward-backward iterations
+ EnCoef did   100 forward-backward iterations
+ Rare condition: small coef for last iteration: -0.380D-15
+ EnCoef did   100 forward-backward iterations
+ EnCoef did   100 forward-backward iterations
+ EnCoef did   100 forward-backward iterations
+ EnCoef did   100 forward-backward iterations
+ EnCoef did    37 forward-backward iterations
+ >>>>>>>>>> Convergence criterion not met.
+ SCF Done:  E(RB3LYP) =  -5333.36055121     A.U. after   33 cycles
+            NFock= 32  Conv=0.93D-03     -V/T= 2.0087
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  3 and  4.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX= -1.52D-02 DF= -2.23D-04 DXR=  8.25D-02 DFR=  6.86D-03 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX= -6.48D-03 DF= -2.11D-05 DXR=  3.35D-02 DFR=  1.12D-03 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  2 DX=  1.39D-02 DF= -5.17D-05 DXR=  6.50D-02 DFR=  4.25D-03 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  2 and  3.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX=  1.50D-03 DF= -2.59D-07 DXR=  4.97D-03 DFR=  2.42D-05 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Restarting incremental Fock formation.
+     Accept linear search using points  5 and  6.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX= -6.01D-03 DF= -1.29D-05 DXR=  3.10D-02 DFR=  9.61D-04 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  5 and  6.
+     Minimum is close to point  6 DX=  9.69D-02 DF= -2.66D-04 DXR=  3.35D-02 DFR=  1.75D-03 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Restarting incremental Fock formation.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  6 and  7.
+     Minimum is close to point  7 DX= -2.56D-01 DF= -8.97D-04 DXR=  8.68D-02 DFR=  7.47D-03 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX=  2.37D-02 DF= -1.34D-04 DXR=  7.31D-02 DFR=  5.37D-03 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Restarting incremental Fock formation.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX=  5.29D-02 DF= -3.29D-06 DXR=  3.91D-02 DFR=  1.55D-03 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX= -5.52D-03 DF= -6.24D-08 DXR=  1.87D-02 DFR=  3.51D-04 which will be used.
+ LinEq1:  Iter=  0 NonCon=     1 RMS=1.23D-04 Max=8.03D-02 NDo=     1
+ AX will form     1 AO Fock derivatives at one time.
+ LinEq1:  Iter=  1 NonCon=     1 RMS=9.31D-04 Max=6.18D-01 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=8.25D-04 Max=4.59D-01 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=1.10D-03 Max=3.32D-01 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=2.96D-04 Max=1.07D-01 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=2.78D-04 Max=1.04D-01 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=2.25D-04 Max=5.20D-02 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=1.59D-04 Max=2.81D-02 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=1.05D-04 Max=2.12D-02 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=8.04D-05 Max=1.85D-02 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=6.14D-05 Max=2.27D-02 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     1 RMS=4.79D-05 Max=1.45D-02 NDo=     1
+ LinEq1:  Iter= 12 NonCon=     1 RMS=3.55D-05 Max=8.79D-03 NDo=     1
+ LinEq1:  Iter= 13 NonCon=     1 RMS=2.97D-05 Max=6.46D-03 NDo=     1
+ LinEq1:  Iter= 14 NonCon=     1 RMS=2.38D-05 Max=5.06D-03 NDo=     1
+ LinEq1:  Iter= 15 NonCon=     1 RMS=1.45D-05 Max=3.09D-03 NDo=     1
+ LinEq1:  Iter= 16 NonCon=     1 RMS=9.63D-06 Max=1.81D-03 NDo=     1
+ LinEq1:  Iter= 17 NonCon=     1 RMS=8.36D-06 Max=1.80D-03 NDo=     1
+ LinEq1:  Iter= 18 NonCon=     1 RMS=5.57D-06 Max=9.83D-04 NDo=     1
+ LinEq1:  Iter= 19 NonCon=     1 RMS=3.49D-06 Max=5.67D-04 NDo=     1
+ LinEq1:  Iter= 20 NonCon=     1 RMS=2.37D-06 Max=3.00D-04 NDo=     1
+ LinEq1:  Iter= 21 NonCon=     1 RMS=1.68D-06 Max=2.23D-04 NDo=     1
+ LinEq1:  Iter= 22 NonCon=     1 RMS=1.11D-06 Max=1.40D-04 NDo=     1
+ LinEq1:  Iter= 23 NonCon=     1 RMS=8.07D-07 Max=1.22D-04 NDo=     1
+ LinEq1:  Iter= 24 NonCon=     1 RMS=4.74D-07 Max=6.98D-05 NDo=     1
+ LinEq1:  Iter= 25 NonCon=     1 RMS=2.97D-07 Max=4.66D-05 NDo=     1
+ LinEq1:  Iter= 26 NonCon=     1 RMS=1.93D-07 Max=2.48D-05 NDo=     1
+ LinEq1:  Iter= 27 NonCon=     1 RMS=1.59D-07 Max=1.70D-05 NDo=     1
+ LinEq1:  Iter= 28 NonCon=     1 RMS=9.04D-08 Max=8.80D-06 NDo=     1
+ LinEq1:  Iter= 29 NonCon=     1 RMS=6.27D-08 Max=9.31D-06 NDo=     1
+ LinEq1:  Iter= 30 NonCon=     1 RMS=3.84D-08 Max=5.99D-06 NDo=     1
+ LinEq1:  Iter= 31 NonCon=     1 RMS=2.93D-08 Max=5.03D-06 NDo=     1
+ LinEq1:  Iter= 32 NonCon=     1 RMS=1.97D-08 Max=3.81D-06 NDo=     1
+ LinEq1:  Iter= 33 NonCon=     1 RMS=1.00D-08 Max=1.63D-06 NDo=     1
+ LinEq1:  Iter= 34 NonCon=     1 RMS=6.94D-09 Max=1.09D-06 NDo=     1
+ LinEq1:  Iter= 35 NonCon=     1 RMS=5.26D-09 Max=8.73D-07 NDo=     1
+ LinEq1:  Iter= 36 NonCon=     0 RMS=3.20D-09 Max=4.54D-07 NDo=     1
+ Linear equations converged to 5.597D-08 5.597D-07 after    36 iterations.
+ Incorrect curvature in search direction -- initial direction reversed.
+ LinEq1:  Iter=  0 NonCon=     1 RMS=2.48D-04 Max=1.60D-01 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=2.26D-03 Max=1.47D+00 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=1.15D-03 Max=6.15D-01 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=1.51D-03 Max=4.29D-01 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=8.83D-04 Max=2.00D-01 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=5.85D-04 Max=2.12D-01 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=6.06D-04 Max=2.16D-01 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=4.02D-04 Max=9.47D-02 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=2.12D-04 Max=3.29D-02 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=1.86D-04 Max=3.19D-02 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=1.17D-04 Max=2.46D-02 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     1 RMS=7.79D-05 Max=1.58D-02 NDo=     1
+ LinEq1:  Iter= 12 NonCon=     1 RMS=4.80D-05 Max=9.38D-03 NDo=     1
+ LinEq1:  Iter= 13 NonCon=     1 RMS=4.08D-05 Max=9.52D-03 NDo=     1
+ LinEq1:  Iter= 14 NonCon=     1 RMS=3.02D-05 Max=9.77D-03 NDo=     1
+ LinEq1:  Iter= 15 NonCon=     1 RMS=2.14D-05 Max=7.94D-03 NDo=     1
+ LinEq1:  Iter= 16 NonCon=     1 RMS=1.60D-05 Max=3.99D-03 NDo=     1
+ LinEq1:  Iter= 17 NonCon=     1 RMS=1.32D-05 Max=2.53D-03 NDo=     1
+ LinEq1:  Iter= 18 NonCon=     1 RMS=9.03D-06 Max=1.77D-03 NDo=     1
+ LinEq1:  Iter= 19 NonCon=     1 RMS=6.78D-06 Max=1.36D-03 NDo=     1
+ LinEq1:  Iter= 20 NonCon=     1 RMS=4.86D-06 Max=8.88D-04 NDo=     1
+ LinEq1:  Iter= 21 NonCon=     1 RMS=3.58D-06 Max=6.03D-04 NDo=     1
+ LinEq1:  Iter= 22 NonCon=     1 RMS=2.27D-06 Max=2.71D-04 NDo=     1
+ LinEq1:  Iter= 23 NonCon=     1 RMS=1.65D-06 Max=2.98D-04 NDo=     1
+ LinEq1:  Iter= 24 NonCon=     1 RMS=1.10D-06 Max=1.69D-04 NDo=     1
+ LinEq1:  Iter= 25 NonCon=     1 RMS=6.69D-07 Max=7.70D-05 NDo=     1
+ LinEq1:  Iter= 26 NonCon=     1 RMS=4.32D-07 Max=5.86D-05 NDo=     1
+ LinEq1:  Iter= 27 NonCon=     1 RMS=3.35D-07 Max=4.55D-05 NDo=     1
+ LinEq1:  Iter= 28 NonCon=     1 RMS=1.92D-07 Max=2.78D-05 NDo=     1
+ LinEq1:  Iter= 29 NonCon=     1 RMS=1.39D-07 Max=2.03D-05 NDo=     1
+ LinEq1:  Iter= 30 NonCon=     1 RMS=8.82D-08 Max=7.48D-06 NDo=     1
+ LinEq1:  Iter= 31 NonCon=     1 RMS=6.21D-08 Max=6.77D-06 NDo=     1
+ LinEq1:  Iter= 32 NonCon=     1 RMS=3.69D-08 Max=5.27D-06 NDo=     1
+ LinEq1:  Iter= 33 NonCon=     1 RMS=2.12D-08 Max=3.59D-06 NDo=     1
+ LinEq1:  Iter= 34 NonCon=     1 RMS=1.60D-08 Max=2.60D-06 NDo=     1
+ LinEq1:  Iter= 35 NonCon=     1 RMS=1.07D-08 Max=1.80D-06 NDo=     1
+ LinEq1:  Iter= 36 NonCon=     1 RMS=6.91D-09 Max=1.20D-06 NDo=     1
+ LinEq1:  Iter= 37 NonCon=     0 RMS=5.13D-09 Max=7.91D-07 NDo=     1
+ Linear equations converged to 9.388D-08 9.388D-07 after    37 iterations.
+ Incorrect curvature in search direction -- initial direction reversed.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ LinEq1:  Iter=  0 NonCon=     1 RMS=1.08D-03 Max=7.50D-01 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=7.62D-03 Max=5.30D+00 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=4.02D-03 Max=1.41D+00 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=2.63D-03 Max=1.18D+00 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=3.42D-03 Max=1.15D+00 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=3.11D-03 Max=9.06D-01 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=2.96D-03 Max=7.12D-01 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=1.78D-03 Max=4.49D-01 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=1.14D-03 Max=2.43D-01 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=9.93D-04 Max=2.04D-01 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=6.36D-04 Max=1.21D-01 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     1 RMS=4.75D-04 Max=1.01D-01 NDo=     1
+ LinEq1:  Iter= 12 NonCon=     1 RMS=2.98D-04 Max=5.20D-02 NDo=     1
+ LinEq1:  Iter= 13 NonCon=     1 RMS=2.40D-04 Max=3.43D-02 NDo=     1
+ LinEq1:  Iter= 14 NonCon=     1 RMS=1.85D-04 Max=2.03D-02 NDo=     1
+ LinEq1:  Iter= 15 NonCon=     1 RMS=1.11D-04 Max=1.33D-02 NDo=     1
+ LinEq1:  Iter= 16 NonCon=     1 RMS=7.89D-05 Max=1.25D-02 NDo=     1
+ LinEq1:  Iter= 17 NonCon=     1 RMS=6.66D-05 Max=1.22D-02 NDo=     1
+ LinEq1:  Iter= 18 NonCon=     1 RMS=4.19D-05 Max=8.32D-03 NDo=     1
+ LinEq1:  Iter= 19 NonCon=     1 RMS=2.87D-05 Max=5.81D-03 NDo=     1
+ LinEq1:  Iter= 20 NonCon=     1 RMS=1.99D-05 Max=3.32D-03 NDo=     1
+ LinEq1:  Iter= 21 NonCon=     1 RMS=1.34D-05 Max=2.14D-03 NDo=     1
+ LinEq1:  Iter= 22 NonCon=     1 RMS=8.72D-06 Max=1.20D-03 NDo=     1
+ LinEq1:  Iter= 23 NonCon=     1 RMS=5.72D-06 Max=1.16D-03 NDo=     1
+ LinEq1:  Iter= 24 NonCon=     1 RMS=3.83D-06 Max=5.44D-04 NDo=     1
+ LinEq1:  Iter= 25 NonCon=     1 RMS=2.30D-06 Max=3.32D-04 NDo=     1
+ LinEq1:  Iter= 26 NonCon=     1 RMS=1.71D-06 Max=2.27D-04 NDo=     1
+ LinEq1:  Iter= 27 NonCon=     1 RMS=1.16D-06 Max=1.69D-04 NDo=     1
+ LinEq1:  Iter= 28 NonCon=     1 RMS=7.79D-07 Max=1.06D-04 NDo=     1
+ LinEq1:  Iter= 29 NonCon=     1 RMS=4.71D-07 Max=5.53D-05 NDo=     1
+ LinEq1:  Iter= 30 NonCon=     1 RMS=3.51D-07 Max=3.23D-05 NDo=     1
+ LinEq1:  Iter= 31 NonCon=     1 RMS=2.39D-07 Max=2.36D-05 NDo=     1
+ LinEq1:  Iter= 32 NonCon=     1 RMS=1.32D-07 Max=1.67D-05 NDo=     1
+ LinEq1:  Iter= 33 NonCon=     1 RMS=7.90D-08 Max=1.35D-05 NDo=     1
+ LinEq1:  Iter= 34 NonCon=     1 RMS=6.13D-08 Max=7.21D-06 NDo=     1
+ LinEq1:  Iter= 35 NonCon=     1 RMS=3.87D-08 Max=4.17D-06 NDo=     1
+ LinEq1:  Iter= 36 NonCon=     1 RMS=2.70D-08 Max=3.83D-06 NDo=     1
+ LinEq1:  Iter= 37 NonCon=     1 RMS=1.83D-08 Max=3.05D-06 NDo=     1
+ LinEq1:  Iter= 38 NonCon=     1 RMS=1.16D-08 Max=1.50D-06 NDo=     1
+ LinEq1:  Iter= 39 NonCon=     1 RMS=5.77D-09 Max=8.31D-07 NDo=     1
+ LinEq1:  Iter= 40 NonCon=     1 RMS=4.01D-09 Max=5.31D-07 NDo=     1
+ LinEq1:  Iter= 41 NonCon=     0 RMS=3.13D-09 Max=4.16D-07 NDo=     1
+ Linear equations converged to 4.825D-08 4.825D-07 after    41 iterations.
+ LinEq1:  Iter=  0 NonCon=     1 RMS=8.09D-04 Max=5.62D-01 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=5.74D-03 Max=3.97D+00 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=3.93D-03 Max=9.62D-01 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=1.58D-03 Max=2.05D-01 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=1.66D-03 Max=5.79D-01 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=1.83D-03 Max=6.45D-01 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=2.49D-03 Max=5.28D-01 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=1.51D-03 Max=3.76D-01 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=9.40D-04 Max=1.58D-01 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=7.67D-04 Max=1.33D-01 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=4.82D-04 Max=9.07D-02 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     1 RMS=3.55D-04 Max=7.87D-02 NDo=     1
+ LinEq1:  Iter= 12 NonCon=     1 RMS=2.28D-04 Max=4.80D-02 NDo=     1
+ LinEq1:  Iter= 13 NonCon=     1 RMS=1.87D-04 Max=3.05D-02 NDo=     1
+ LinEq1:  Iter= 14 NonCon=     1 RMS=1.39D-04 Max=1.94D-02 NDo=     1
+ LinEq1:  Iter= 15 NonCon=     1 RMS=7.98D-05 Max=1.03D-02 NDo=     1
+ LinEq1:  Iter= 16 NonCon=     1 RMS=5.78D-05 Max=1.13D-02 NDo=     1
+ LinEq1:  Iter= 17 NonCon=     1 RMS=4.55D-05 Max=5.65D-03 NDo=     1
+ LinEq1:  Iter= 18 NonCon=     1 RMS=2.82D-05 Max=6.28D-03 NDo=     1
+ LinEq1:  Iter= 19 NonCon=     1 RMS=1.80D-05 Max=3.85D-03 NDo=     1
+ LinEq1:  Iter= 20 NonCon=     1 RMS=1.35D-05 Max=3.61D-03 NDo=     1
+ LinEq1:  Iter= 21 NonCon=     1 RMS=8.71D-06 Max=2.17D-03 NDo=     1
+ LinEq1:  Iter= 22 NonCon=     1 RMS=6.01D-06 Max=1.27D-03 NDo=     1
+ LinEq1:  Iter= 23 NonCon=     1 RMS=4.00D-06 Max=7.99D-04 NDo=     1
+ LinEq1:  Iter= 24 NonCon=     1 RMS=2.57D-06 Max=3.85D-04 NDo=     1
+ LinEq1:  Iter= 25 NonCon=     1 RMS=1.51D-06 Max=2.31D-04 NDo=     1
+ LinEq1:  Iter= 26 NonCon=     1 RMS=1.20D-06 Max=1.57D-04 NDo=     1
+ LinEq1:  Iter= 27 NonCon=     1 RMS=7.38D-07 Max=9.30D-05 NDo=     1
+ LinEq1:  Iter= 28 NonCon=     1 RMS=4.62D-07 Max=4.56D-05 NDo=     1
+ LinEq1:  Iter= 29 NonCon=     1 RMS=2.82D-07 Max=2.71D-05 NDo=     1
+ LinEq1:  Iter= 30 NonCon=     1 RMS=2.18D-07 Max=2.19D-05 NDo=     1
+ LinEq1:  Iter= 31 NonCon=     1 RMS=1.39D-07 Max=1.57D-05 NDo=     1
+ LinEq1:  Iter= 32 NonCon=     1 RMS=7.69D-08 Max=9.56D-06 NDo=     1
+ LinEq1:  Iter= 33 NonCon=     1 RMS=5.14D-08 Max=9.25D-06 NDo=     1
+ LinEq1:  Iter= 34 NonCon=     1 RMS=3.79D-08 Max=3.87D-06 NDo=     1
+ LinEq1:  Iter= 35 NonCon=     1 RMS=2.34D-08 Max=2.74D-06 NDo=     1
+ LinEq1:  Iter= 36 NonCon=     1 RMS=1.71D-08 Max=2.78D-06 NDo=     1
+ LinEq1:  Iter= 37 NonCon=     1 RMS=1.14D-08 Max=1.78D-06 NDo=     1
+ LinEq1:  Iter= 38 NonCon=     1 RMS=6.93D-09 Max=8.87D-07 NDo=     1
+ LinEq1:  Iter= 39 NonCon=     1 RMS=3.56D-09 Max=3.86D-07 NDo=     1
+ LinEq1:  Iter= 40 NonCon=     0 RMS=2.61D-09 Max=2.63D-07 NDo=     1
+ Linear equations converged to 3.854D-08 3.854D-07 after    40 iterations.
+     Accept linear search using points  1 and  2.
+ Restarting incremental Fock formation.
+ LinEq1:  Iter=  0 NonCon=     1 RMS=1.41D-04 Max=8.61D-02 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=2.75D-04 Max=1.56D-01 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=2.08D-04 Max=7.17D-02 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=7.97D-05 Max=2.31D-02 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=9.60D-05 Max=2.50D-02 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=8.08D-05 Max=1.93D-02 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=6.94D-05 Max=1.34D-02 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=5.43D-05 Max=1.22D-02 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=3.28D-05 Max=6.56D-03 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=2.34D-05 Max=4.23D-03 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=1.53D-05 Max=2.08D-03 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     1 RMS=1.17D-05 Max=2.81D-03 NDo=     1
+ LinEq1:  Iter= 12 NonCon=     1 RMS=7.02D-06 Max=9.73D-04 NDo=     1
+ LinEq1:  Iter= 13 NonCon=     1 RMS=6.19D-06 Max=1.36D-03 NDo=     1
+ LinEq1:  Iter= 14 NonCon=     1 RMS=4.14D-06 Max=5.52D-04 NDo=     1
+ LinEq1:  Iter= 15 NonCon=     1 RMS=2.97D-06 Max=3.96D-04 NDo=     1
+ LinEq1:  Iter= 16 NonCon=     1 RMS=1.69D-06 Max=2.53D-04 NDo=     1
+ LinEq1:  Iter= 17 NonCon=     1 RMS=1.37D-06 Max=2.05D-04 NDo=     1
+ LinEq1:  Iter= 18 NonCon=     1 RMS=9.45D-07 Max=1.29D-04 NDo=     1
+ LinEq1:  Iter= 19 NonCon=     1 RMS=5.35D-07 Max=8.55D-05 NDo=     1
+ LinEq1:  Iter= 20 NonCon=     1 RMS=3.64D-07 Max=8.47D-05 NDo=     1
+ LinEq1:  Iter= 21 NonCon=     1 RMS=2.72D-07 Max=6.36D-05 NDo=     1
+ LinEq1:  Iter= 22 NonCon=     1 RMS=1.87D-07 Max=3.49D-05 NDo=     1
+ LinEq1:  Iter= 23 NonCon=     1 RMS=1.14D-07 Max=1.85D-05 NDo=     1
+ LinEq1:  Iter= 24 NonCon=     1 RMS=7.58D-08 Max=1.56D-05 NDo=     1
+ LinEq1:  Iter= 25 NonCon=     1 RMS=5.29D-08 Max=6.99D-06 NDo=     1
+ LinEq1:  Iter= 26 NonCon=     1 RMS=3.37D-08 Max=4.14D-06 NDo=     1
+ LinEq1:  Iter= 27 NonCon=     1 RMS=2.35D-08 Max=3.68D-06 NDo=     1
+ LinEq1:  Iter= 28 NonCon=     1 RMS=1.66D-08 Max=2.14D-06 NDo=     1
+ LinEq1:  Iter= 29 NonCon=     1 RMS=8.61D-09 Max=1.03D-06 NDo=     1
+ LinEq1:  Iter= 30 NonCon=     1 RMS=5.93D-09 Max=6.47D-07 NDo=     1
+ LinEq1:  Iter= 31 NonCon=     1 RMS=4.34D-09 Max=3.68D-07 NDo=     1
+ LinEq1:  Iter= 32 NonCon=     0 RMS=2.55D-09 Max=2.35D-07 NDo=     1
+ Linear equations converged to 3.412D-08 3.412D-07 after    32 iterations.
+     Minimum is close to point  2 DX=  6.71D-02 DF= -9.72D-08 DXR=  6.29D-02 DFR=  3.97D-03 which will be used.
+ LinEq1:  Iter=  0 NonCon=     1 RMS=1.01D-05 Max=6.90D-03 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=6.43D-05 Max=4.39D-02 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=2.81D-05 Max=1.41D-02 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=1.33D-05 Max=2.97D-03 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=1.17D-05 Max=3.02D-03 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=1.49D-05 Max=4.91D-03 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=1.76D-05 Max=5.72D-03 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=1.12D-05 Max=2.99D-03 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=7.02D-06 Max=1.22D-03 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=4.79D-06 Max=7.31D-04 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=3.35D-06 Max=4.26D-04 NDo=     1
