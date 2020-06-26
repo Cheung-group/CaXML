@@ -79,7 +79,7 @@ print("done in %0.3fs" % (time() - t0))
 
 # Estimate the score on the entire dataset, with no missing values
 rstate = random.randrange(1,999999999,1)
-estimator = RandomForestRegressor(random_state = rstate, n_estimators = 100, n_jobs = 12)
+estimator = RandomForestRegressor(random_state = rstate, n_estimators = 100, n_jobs = -1)
 estimator.fit(X_train_pca, y_train)
 pred = estimator.predict(X_test_pca)
 
