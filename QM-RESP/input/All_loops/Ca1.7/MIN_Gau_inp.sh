@@ -19,7 +19,8 @@ Mul=( [loop1]=1 [loop2]=1 [loop3]=1 [loop4]=1)
         rm -f New.xyz
         rm -f Min.xyz
         perl pdb2xyz.pl Selected/${i}.pdb
-        obminimize -n 100 -sd -ff uff New.xyz > Min.xyz
+        num=`cat New.xyz | wc -l`
+        obminimize -n 100 -sd -ff uff New.xyz | tail -n $num > Min.xyz
 
         sed -i 1,2d Min.xyz
         # replace the xyz part in the inp file
