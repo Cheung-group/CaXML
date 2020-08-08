@@ -1,0 +1,5 @@
+numpy, pandas, random, and matplotlib | self explanatory. The role of pandas in storing the results of the random search is particularly important.
+pickle | assists in storing results long-term
+sklearn | the source of the network architecture and training. sklearn.neural_network MLPRegressor is the primary model for these scripts, as well as MLPClassifier. It also scales the features.
+skopt | used for skopt.gp_minimize, the sequential, model-based learning process. does n_random_starts random searches and n_calls-n_random_starts informed searches.
+
