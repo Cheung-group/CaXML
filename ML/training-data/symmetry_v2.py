@@ -84,7 +84,7 @@ def Ang(r_cut):
                     aj = atoms[j]
                     r_ij = np.linalg.norm(at.coord - aj.coord)
                     r_ik = np.linalg.norm(at.coord - ak.coord)
-                    r_kj = np.linalg.norm(ak.coord - ak.coord)
+                    r_kj = np.linalg.norm(ak.coord - aj.coord)
 
                     cos_ikj = np.inner((at.coord - aj.coord), (at.coord - ak.coord))/(r_ij*r_ik)
                     #print("cosine angle is %f " % cos_ikj)
