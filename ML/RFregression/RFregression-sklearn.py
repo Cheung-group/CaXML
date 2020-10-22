@@ -19,7 +19,7 @@ sns.set(style='whitegrid',
         })
 
 from pandas import set_option
-set_option("display.max_rows", 10)
+#set_option("display.max_rows", 10)
 pd.options.mode.chained_assignment = None
 
 from sklearn import preprocessing
@@ -29,18 +29,13 @@ from sklearn.metrics import confusion_matrix
 from scipy.stats import truncnorm
 from sklearn.ensemble import RandomForestClassifier
 
-filename = './distData.txt'
+filename = 'sym.txt'
 data = pd.read_csv(filename)
 
 x = pd.DataFrame(data)
 y = pd.DataFrame(data.Cachg)
 
 #Prepare predictors and response columns
-
-#x = pd.DataFrame(data, columns=['C1Ca','C2Ca','C3Ca','O4Ca','O5Ca','C6Ca',
-#'C7Ca','C8Ca','O9Ca','O10Ca','C11Ca','C12Ca','C13Ca','C14Ca','O15Ca','O16Ca',
-#'Cach'])
-
 
 correct_Pattern_labels = data['Cachg'].values
 feature_vectors = data.drop(['Cachg'], axis=1)
@@ -51,7 +46,7 @@ from sklearn.ensemble import RandomForestRegressor
 scaler = preprocessing.StandardScaler().fit(feature_vectors)
 scaled_features = scaler.transform(feature_vectors)
 
-testsize = 0.3
+testsize = 0.1
 rstate = random.randrange(1,999999999,1)
 X_train, X_test, y_train, y_test = train_test_split(feature_vectors, correct_Pattern_labels, test_size = testsize, random_state = rstate)
 
@@ -61,30 +56,37 @@ from sklearn.decomposition import PCA
 #############################################################################
 # Compute a PCA (anticlines) on the anticlines dataset (treated as unlabeled
 # dataset): unsupervised feature extraction / dimensionality reduction
-from time import time
-n_components = 50
+#from time import time
+#n_components = 50
 
-t0 = time()
-pca = PCA(n_components=n_components, svd_solver='randomized',
-                   whiten=True).fit(X_train)
-print("done in %0.3fs" % (time() - t0))
+#t0 = time()
+#pca = PCA(n_components=n_components, svd_solver='randomized',
+#                   whiten=True).fit(X_train)
+#print("done in %0.3fs" % (time() - t0))
 
-print("Projecting the input data on the eigen-anticlines orthonormal basis")
-t0 = time()
-X_train_pca = pca.transform(X_train)
-X_test_pca = pca.transform(X_test)
-print("done in %0.3fs" % (time() - t0))
+#print("Projecting the input data on the eigen-anticlines orthonormal basis")
+#t0 = time()
+#X_train_pca = pca.transform(X_train)
+#X_test_pca = pca.transform(X_test)
+#print("done in %0.3fs" % (time() - t0))
 
 #############################################################################
 
+X_train_pca = X_train
+X_test_pca = X_test
+
 # Estimate the score on the entire dataset, with no missing values
 rstate = random.randrange(1,999999999,1)
+<<<<<<< HEAD
 estimator = RandomForestRegressor(random_state = rstate, n_estimators = 100, n_jobs = -1)
+=======
+estimator = RandomForestRegressor(random_state = rstate, n_estimators = 500, n_jobs = 12)
+>>>>>>> 70efc8a7cb3d7f72cfe1656a6b34fbb18a3dbe12
 estimator.fit(X_train_pca, y_train)
 pred = estimator.predict(X_test_pca)
 
 from sklearn.model_selection import cross_val_score
-cvscore = cross_val_score(estimator, X_train, y_train, cv=3)
+cvscore = cross_val_score(estimator, X_train, y_train, cv=5)
 score = cvscore.mean()
 print("Score with the entire dataset = %.2f" % score)
 
@@ -96,7 +98,7 @@ pl.plot(pred, y_test,'ro')
 pl.plot([1,3],[1,3], 'g-')
 pl.xlabel('Predicted charge')
 pl.ylabel('QM charge')
-pl.show()
+#pl.show()
 
 
 fig = plt.figure()
@@ -106,7 +108,7 @@ ax.set_ylim(1, 3)
 plt.plot(y_test1, color='red', label = 'QM charge')
 plt.plot(pred, color='blue', label = 'Predicted charge')
 plt.legend(loc='best')
-plt.show()
+#plt.show()
 
 
 from sklearn.metrics import r2_score
@@ -136,4 +138,4 @@ plt.bar(range(X_train.shape[1]), importances[indices],
        color="r", yerr=std[indices], align="center")
 plt.xticks(range(X_train.shape[1]), indices)
 plt.xlim([-1, X_train.shape[1]])
-plt.show()
+#plt.show()

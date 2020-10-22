@@ -1,0 +1,15 @@
+%chk=NNN.chk
+%nprocshared=20
+%mem=10GB
+%nosave
+#b3lyp/svp scf=(tight,noincore,xqc) Test 
+#IOP(5/87=12) Density=Current Pop=(MK,readradii) iop(6/33=2) iop(6/42=6)
+
+NNN 
+
+   CHG  MUL 
+
+Ca 1.70
+
+
+

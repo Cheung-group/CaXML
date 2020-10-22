@@ -1,4 +1,6 @@
+#import pymol
 from pymol import cmd
+#pymol.finish_launching(['pymol', '-qi'])
 import sys, getopt
 
 def bb_mod(infile, outfile):
@@ -14,6 +16,7 @@ def bb_mod(infile, outfile):
     #        resi 101 or resi 104 or resi 151 or resi 200")
 
     cmd.save(outfile)
+    cmd.quit()
 
 def main(argv):
    inputfile = 'in.pdb'

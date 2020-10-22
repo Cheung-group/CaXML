@@ -9,7 +9,7 @@ Created on Wed Jul 10 14:08:55 2019
 import h2o
 h2o.init()
 
-train = 'data.txt'
+train = 'crdData.txt'
 #test = '/home/nate/Desktop/distancetest.txt'
 
 
@@ -23,7 +23,7 @@ training, valid, test = class_df.split_frame([0.8,0.1], seed=1234)
 deep = h2o.estimators.H2ODeepLearningEstimator()
 deep.train(x=X, y=Y, training_frame=training, validation_frame=valid)
 deep.model_performance()
-#"pred = deep.predict(predictdata)
+#pred = deep.predict(predictdata)
 pred = deep.predict(test)
 
 #Print Prediction as python list
