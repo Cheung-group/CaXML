@@ -77,7 +77,11 @@ X_test_pca = X_test
 
 # Estimate the score on the entire dataset, with no missing values
 rstate = random.randrange(1,999999999,1)
+<<<<<<< HEAD
+estimator = RandomForestRegressor(random_state = rstate, n_estimators = 100, n_jobs = -1)
+=======
 estimator = RandomForestRegressor(random_state = rstate, n_estimators = 500, n_jobs = 12)
+>>>>>>> 70efc8a7cb3d7f72cfe1656a6b34fbb18a3dbe12
 estimator.fit(X_train_pca, y_train)
 pred = estimator.predict(X_test_pca)
 
