@@ -1,5 +1,11 @@
-The txt files are for creating contact maps in VMD. The data is rearranged to be in the standard gephi form of the two csv files Edges776.csv and Nodes776.csv. 
+The txt files are for creating contact maps in VMD. 
+
+The data is rearranged to be in the standard gephi form of the two csv files Edges776.csv and Nodes776.csv.
+ 
 These are imported to gephi with the edges merge strategy "minimum." This only affects the water molecules because they are the only ones which make multiple contacts 
 (They are the only ones with a noninvertible mapping from the pdb molecule ID to the "positions" of the loop i.e., there are multiple mappings to "16" which stands for water within a frame).
+
 This rarely affects the water-calcium contact because they are all centered around Calcium.
-This should result in data which looks like the .gephi file. From here, analysis is carried out in the statistics tab of gephi on the overview screen.
+This should result in data which looks like the .gephi file. 
+
+From here, analysis is carried out in the statistics tab of gephi on the overview screen.
