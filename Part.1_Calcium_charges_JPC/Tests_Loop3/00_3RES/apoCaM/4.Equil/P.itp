@@ -1,4 +1,0 @@
-#ifdef POSRES_BB
-; Position restraint for protein backbone
-#include "posre_Protein_chain_P_BB.itp"
-#endif
