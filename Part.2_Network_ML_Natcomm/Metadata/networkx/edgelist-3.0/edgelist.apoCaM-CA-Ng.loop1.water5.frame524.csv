@@ -1,0 +1,5 @@
+Source,Target,Type,Weight
+2,4,Undirected,0.3215369117015851
+2,12,Undirected,0.37797803975186467
+4,12,Undirected,0.3823344044119323
+12,13,Undirected,0.3813566310738393
