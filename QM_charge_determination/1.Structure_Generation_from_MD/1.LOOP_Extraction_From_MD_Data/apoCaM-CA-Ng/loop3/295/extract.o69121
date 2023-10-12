@@ -1,0 +1,608 @@
+/scratch/69121
+extracting loop3 structures from 2 part 3
+/project/dsi/apps/vmd/1.9.4a43/lib/vmd/vmd_LINUXAMD64: /lib64/libGL.so.1: no version information available (required by /project/dsi/apps/vmd/1.9.4a43/lib/vmd/vmd_LINUXAMD64)
+Info) VMD for LINUXAMD64, version 1.9.4a43 (June 11, 2020)
+Info) http://www.ks.uiuc.edu/Research/vmd/                         
+Info) Email questions and bug reports to vmd@ks.uiuc.edu           
+Info) Please include this reference in published work using VMD:   
+Info)    Humphrey, W., Dalke, A. and Schulten, K., `VMD - Visual   
+Info)    Molecular Dynamics', J. Molec. Graphics 1996, 14.1, 33-38.
+Info) -------------------------------------------------------------
+Info) Multithreading available, 48 CPUs detected.
+Info)   CPU features: SSE2 AVX AVX2 FMA AVX512F AVX512CD 
+Info) Free system memory: 178GB (94%)
+wkf_thread_set_self_cpuaffinitylist: sched_setaffinity: Invalid argument
+wkf_thread_set_self_cpuaffinitylist: sched_setaffinity: Invalid argument
+wkf_thread_set_self_cpuaffinitylist: sched_setaffinity: Invalid argument
+wkf_thread_set_self_cpuaffinitylist: sched_setaffinity: Invalid argument
+wkf_thread_set_self_cpuaffinitylist: sched_setaffinity: Invalid argument
+wkf_thread_set_self_cpuaffinitylist: sched_setaffinity: Invalid argument
+wkf_thread_set_self_cpuaffinitylist: sched_setaffinity: Invalid argument
+wkf_thread_set_self_cpuaffinitylist: sched_setaffinity: Invalid argument
+wkf_thread_set_self_cpuaffinitylist: sched_setaffinity: Invalid argument
+wkf_thread_set_self_cpuaffinitylist: sched_setaffinity: Invalid argument
+wkf_thread_set_self_cpuaffinitylist: sched_setaffinity: Invalid argument
+wkf_thread_set_self_cpuaffinitylist: sched_setaffinity: Invalid argument
+wkf_thread_set_self_cpuaffinitylist: sched_setaffinity: Invalid argument
+wkf_thread_set_self_cpuaffinitylist: sched_setaffinity: Invalid argument
+wkf_thread_set_self_cpuaffinitylist: sched_setaffinity: Invalid argument
+wkf_thread_set_self_cpuaffinitylist: sched_setaffinity: Invalid argument
+wkf_thread_set_self_cpuaffinitylist: sched_setaffinity: Invalid argument
+wkf_thread_set_self_cpuaffinitylist: sched_setaffinity: Invalid argument
+wkf_thread_set_self_cpuaffinitylist: sched_setaffinity: Invalid argument
+wkf_thread_set_self_cpuaffinitylist: sched_setaffinity: Invalid argument
+wkf_thread_set_self_cpuaffinitylist: sched_setaffinity: Invalid argument
+wkf_thread_set_self_cpuaffinitylist: sched_setaffinity: Invalid argument
+wkf_thread_set_self_cpuaffinitylist: sched_setaffinity: Invalid argument
+wkf_thread_set_self_cpuaffinitylist: sched_setaffinity: Invalid argument
+wkf_thread_set_self_cpuaffinitylist: sched_setaffinity: Invalid argument
+wkf_thread_set_self_cpuaffinitylist: sched_setaffinity: Invalid argument
+wkf_thread_set_self_cpuaffinitylist: sched_setaffinity: Invalid argument
+wkf_thread_set_self_cpuaffinitylist: sched_setaffinity: Invalid argument
+wkf_thread_set_self_cpuaffinitylist: sched_setaffinity: Invalid argument
+wkf_thread_set_self_cpuaffinitylist: sched_setaffinity: Invalid argument
+wkf_thread_set_self_cpuaffinitylist: sched_setaffinity: Invalid argument
+wkf_thread_set_self_cpuaffinitylist: sched_setaffinity: Invalid argument
+wkf_thread_set_self_cpuaffinitylist: sched_setaffinity: Invalid argument
+wkf_thread_set_self_cpuaffinitylist: sched_setaffinity: Invalid argument
+wkf_thread_set_self_cpuaffinitylist: sched_setaffinity: Invalid argument
+wkf_thread_set_self_cpuaffinitylist: sched_setaffinity: Invalid argument
+wkf_thread_set_self_cpuaffinitylist: sched_setaffinity: Invalid argument
+wkf_thread_set_self_cpuaffinitylist: sched_setaffinity: Invalid argument
+wkf_thread_set_self_cpuaffinitylist: sched_setaffinity: Invalid argument
+wkf_thread_set_self_cpuaffinitylist: sched_setaffinity: Invalid argument
+wkf_thread_set_self_cpuaffinitylist: sched_setaffinity: Invalid argument
+wkf_thread_set_self_cpuaffinitylist: sched_setaffinity: Invalid argument
+wkf_thread_set_self_cpuaffinitylist: sched_setaffinity: Invalid argument
+wkf_thread_set_self_cpuaffinitylist: sched_setaffinity: Invalid argument
+wkf_thread_set_self_cpuaffinitylist: sched_setaffinity: Invalid argument
+wkf_thread_set_self_cpuaffinitylist: sched_setaffinity: Invalid argument
+wkf_thread_set_self_cpuaffinitylist: sched_setaffinity: Invalid argument
+Info) No CUDA accelerator devices available.
+Info) Dynamically loaded 3 plugins in directory:
+Info) /project/dsi/apps/vmd/1.9.4a43/lib/vmd/plugins/LINUXAMD64/molfile
+Info) File loading in progress, please wait.
+Info) Using plugin gro for structure file /project/cheung/pzhang5/MD/apoCaM-CA-Ng/295/nvt-nopr-1.whole.gro
+Info) Using plugin gro for coordinates from file /project/cheung/pzhang5/MD/apoCaM-CA-Ng/295/nvt-nopr-1.whole.gro
+Info) Determining bond structure from distance search ...
+Info) Finished with coordinate file /project/cheung/pzhang5/MD/apoCaM-CA-Ng/295/nvt-nopr-1.whole.gro.
+Info) Analyzing structure ...
+Info)    Atoms: 98047
+Info)    Bonds: 66185
+Info)    Angles: 0  Dihedrals: 0  Impropers: 0  Cross-terms: 0
+Info)    Bondtypes: 0  Angletypes: 0  Dihedraltypes: 0  Impropertypes: 0
+Info)    Residues: 32062
+Info)    Waters: 31678
+Warning) Unusual bond between residues:  147 (protein) and 148 (none)
+Warning) Unusual bond between residues:  184 (protein) and 185 (none)
+Info)    Segments: 1
+Info)    Fragments: 31879   Protein: 2   Nucleic: 0
+dcdplugin) detected standard 32-bit DCD file of native endianness
+dcdplugin) CHARMM format DCD file (also NAMD 2.1 and later)
+Info) Using plugin dcd for coordinates from file /project/cheung/pzhang5/MD/apoCaM-CA-Ng/295/nvt-nopr-3.unwrap.dcd
+Info) Finished with coordinate file /project/cheung/pzhang5/MD/apoCaM-CA-Ng/295/nvt-nopr-3.unwrap.dcd.
+2
+3
+200
+12
+20 56 93 129
+149 150 151 152 174 175 176 177 186 187 188 189
+401
+3.3
+93
+188
+104
+92
+105
+atomselect0
+1397 1413 1414
+atomselect1
+1415 1416 1417 1418 1419 1420 1421 1422 1423 1424 1425 1426 1427 1428 1429 1430 1431 1432 1433 1434 1435 1436 1437 1438 1439 1440 1441 1442 1443 1444 1445 1446 1447 1448 1449 1450 1451 1452 1453 1454 1455 1456 1457 1458 1459 1460 1461 1462 1463 1464 1465 1466 1467 1468 1469 1470 1471 1472 1473 1474 1475 1476 1477 1478 1479 1480 1481 1482 1483 1484 1485 1486 1487 1488 1489 1490 1491 1492 1493 1494 1495 1496 1497 1498 1499 1500 1501 1502 1503 1504 1505 1506 1507 1508 1509 1510 1511 1512 1513 1514 1515 1516 1517 1518 1519 1520 1521 1522 1523 1524 1525 1526 1527 1528 1529 1530 1531 1532 1533 1534 1535 1536 1537 1538 1539 1540 1541 1542 1543 1544 1545 1546 1547 1548 1549 1550 1551 1552 1553 1554 1555 1556 1557 1558 1559 1560 1561 1562 1563 1564 1565 1566 1567 1568 1569 1570 1571 1572 1573 1574
+atomselect2
+1575 1576 1577
+atomselect3
+2816
+102
+frame 2
+3 nearby water molecule(s) in frame 2 around calcium 3
+33547 33548 33549 69421 69422 69423 84505 84506 84507
+Info) Opened coordinate file loop3.frame201.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame201.water3.pdb.
+frame 3
+3 nearby water molecule(s) in frame 3 around calcium 3
+34591 34592 34593 69421 69422 69423 84505 84506 84507
+Info) Opened coordinate file loop3.frame202.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame202.water3.pdb.
+frame 4
+3 nearby water molecule(s) in frame 4 around calcium 3
+12790 12791 12792 49111 49112 49113 97111 97112 97113
+Info) Opened coordinate file loop3.frame203.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame203.water3.pdb.
+frame 5
+3 nearby water molecule(s) in frame 5 around calcium 3
+12790 12791 12792 60031 60032 60033 87331 87332 87333
+Info) Opened coordinate file loop3.frame204.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame204.water3.pdb.
+frame 6
+3 nearby water molecule(s) in frame 6 around calcium 3
+12790 12791 12792 52531 52532 52533 60031 60032 60033
+Info) Opened coordinate file loop3.frame205.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame205.water3.pdb.
+frame 7
+2 nearby water molecule(s) in frame 7 around calcium 3
+9178 9179 9180 42586 42587 42588
+Info) Opened coordinate file loop3.frame206.water2.pdb for writing.
+Info) Finished with coordinate file loop3.frame206.water2.pdb.
+frame 8
+3 nearby water molecule(s) in frame 8 around calcium 3
+9178 9179 9180 42586 42587 42588 51682 51683 51684
+Info) Opened coordinate file loop3.frame207.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame207.water3.pdb.
+frame 9
+2 nearby water molecule(s) in frame 9 around calcium 3
+42586 42587 42588 51682 51683 51684
+Info) Opened coordinate file loop3.frame208.water2.pdb for writing.
+Info) Finished with coordinate file loop3.frame208.water2.pdb.
+frame 10
+2 nearby water molecule(s) in frame 10 around calcium 3
+42586 42587 42588 51682 51683 51684
+Info) Opened coordinate file loop3.frame209.water2.pdb for writing.
+Info) Finished with coordinate file loop3.frame209.water2.pdb.
+frame 11
+3 nearby water molecule(s) in frame 11 around calcium 3
+11677 11678 11679 42586 42587 42588 87478 87479 87480
+Info) Opened coordinate file loop3.frame210.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame210.water3.pdb.
+frame 12
+2 nearby water molecule(s) in frame 12 around calcium 3
+86518 86519 86520 87478 87479 87480
+Info) Opened coordinate file loop3.frame211.water2.pdb for writing.
+Info) Finished with coordinate file loop3.frame211.water2.pdb.
+frame 13
+2 nearby water molecule(s) in frame 13 around calcium 3
+23239 23240 23241 71281 71282 71283
+Info) Opened coordinate file loop3.frame212.water2.pdb for writing.
+Info) Finished with coordinate file loop3.frame212.water2.pdb.
+frame 14
+2 nearby water molecule(s) in frame 14 around calcium 3
+26008 26009 26010 91021 91022 91023
+Info) Opened coordinate file loop3.frame213.water2.pdb for writing.
+Info) Finished with coordinate file loop3.frame213.water2.pdb.
+frame 15
+3 nearby water molecule(s) in frame 15 around calcium 3
+69742 69743 69744 74482 74483 74484 91021 91022 91023
+Info) Opened coordinate file loop3.frame214.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame214.water3.pdb.
+frame 16
+2 nearby water molecule(s) in frame 16 around calcium 3
+69259 69260 69261 69742 69743 69744
+Info) Opened coordinate file loop3.frame215.water2.pdb for writing.
+Info) Finished with coordinate file loop3.frame215.water2.pdb.
+frame 17
+3 nearby water molecule(s) in frame 17 around calcium 3
+4741 4742 4743 38203 38204 38205 69742 69743 69744
+Info) Opened coordinate file loop3.frame216.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame216.water3.pdb.
+frame 18
+2 nearby water molecule(s) in frame 18 around calcium 3
+3709 3710 3711 65857 65858 65859
+Info) Opened coordinate file loop3.frame217.water2.pdb for writing.
+Info) Finished with coordinate file loop3.frame217.water2.pdb.
+frame 19
+2 nearby water molecule(s) in frame 19 around calcium 3
+58636 58637 58638 96760 96761 96762
+Info) Opened coordinate file loop3.frame218.water2.pdb for writing.
+Info) Finished with coordinate file loop3.frame218.water2.pdb.
+frame 20
+3 nearby water molecule(s) in frame 20 around calcium 3
+14278 14279 14280 24559 24560 24561 58636 58637 58638
+Info) Opened coordinate file loop3.frame219.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame219.water3.pdb.
+frame 21
+3 nearby water molecule(s) in frame 21 around calcium 3
+12067 12068 12069 14278 14279 14280 24559 24560 24561
+Info) Opened coordinate file loop3.frame220.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame220.water3.pdb.
+frame 22
+3 nearby water molecule(s) in frame 22 around calcium 3
+11092 11093 11094 12067 12068 12069 24559 24560 24561
+Info) Opened coordinate file loop3.frame221.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame221.water3.pdb.
+frame 23
+3 nearby water molecule(s) in frame 23 around calcium 3
+12067 12068 12069 19978 19979 19980 65182 65183 65184
+Info) Opened coordinate file loop3.frame222.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame222.water3.pdb.
+frame 24
+3 nearby water molecule(s) in frame 24 around calcium 3
+12067 12068 12069 45955 45956 45957 54514 54515 54516
+Info) Opened coordinate file loop3.frame223.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame223.water3.pdb.
+frame 25
+3 nearby water molecule(s) in frame 25 around calcium 3
+10987 10988 10989 15199 15200 15201 45955 45956 45957
+Info) Opened coordinate file loop3.frame224.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame224.water3.pdb.
+frame 26
+3 nearby water molecule(s) in frame 26 around calcium 3
+15199 15200 15201 17614 17615 17616 45955 45956 45957
+Info) Opened coordinate file loop3.frame225.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame225.water3.pdb.
+frame 27
+3 nearby water molecule(s) in frame 27 around calcium 3
+29332 29333 29334 31012 31013 31014 57310 57311 57312
+Info) Opened coordinate file loop3.frame226.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame226.water3.pdb.
+frame 28
+2 nearby water molecule(s) in frame 28 around calcium 3
+29332 29333 29334 75091 75092 75093
+Info) Opened coordinate file loop3.frame227.water2.pdb for writing.
+Info) Finished with coordinate file loop3.frame227.water2.pdb.
+frame 29
+3 nearby water molecule(s) in frame 29 around calcium 3
+13621 13622 13623 67921 67922 67923 75091 75092 75093
+Info) Opened coordinate file loop3.frame228.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame228.water3.pdb.
+frame 30
+2 nearby water molecule(s) in frame 30 around calcium 3
+67921 67922 67923 75091 75092 75093
+Info) Opened coordinate file loop3.frame229.water2.pdb for writing.
+Info) Finished with coordinate file loop3.frame229.water2.pdb.
+frame 31
+3 nearby water molecule(s) in frame 31 around calcium 3
+9604 9605 9606 18151 18152 18153 43744 43745 43746
+Info) Opened coordinate file loop3.frame230.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame230.water3.pdb.
+frame 32
+3 nearby water molecule(s) in frame 32 around calcium 3
+6349 6350 6351 18151 18152 18153 24715 24716 24717
+Info) Opened coordinate file loop3.frame231.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame231.water3.pdb.
+frame 33
+3 nearby water molecule(s) in frame 33 around calcium 3
+41722 41723 41724 75235 75236 75237 77305 77306 77307
+Info) Opened coordinate file loop3.frame232.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame232.water3.pdb.
+frame 34
+3 nearby water molecule(s) in frame 34 around calcium 3
+32839 32840 32841 57868 57869 57870 73615 73616 73617
+Info) Opened coordinate file loop3.frame233.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame233.water3.pdb.
+frame 35
+2 nearby water molecule(s) in frame 35 around calcium 3
+57868 57869 57870 76567 76568 76569
+Info) Opened coordinate file loop3.frame234.water2.pdb for writing.
+Info) Finished with coordinate file loop3.frame234.water2.pdb.
+frame 36
+2 nearby water molecule(s) in frame 36 around calcium 3
+17722 17723 17724 76417 76418 76419
+Info) Opened coordinate file loop3.frame235.water2.pdb for writing.
+Info) Finished with coordinate file loop3.frame235.water2.pdb.
+frame 37
+3 nearby water molecule(s) in frame 37 around calcium 3
+17722 17723 17724 35572 35573 35574 89419 89420 89421
+Info) Opened coordinate file loop3.frame236.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame236.water3.pdb.
+frame 38
+3 nearby water molecule(s) in frame 38 around calcium 3
+17722 17723 17724 35572 35573 35574 89419 89420 89421
+Info) Opened coordinate file loop3.frame237.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame237.water3.pdb.
+frame 39
+3 nearby water molecule(s) in frame 39 around calcium 3
+35572 35573 35574 66127 66128 66129 89419 89420 89421
+Info) Opened coordinate file loop3.frame238.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame238.water3.pdb.
+frame 40
+2 nearby water molecule(s) in frame 40 around calcium 3
+27637 27638 27639 82963 82964 82965
+Info) Opened coordinate file loop3.frame239.water2.pdb for writing.
+Info) Finished with coordinate file loop3.frame239.water2.pdb.
+frame 41
+3 nearby water molecule(s) in frame 41 around calcium 3
+21148 21149 21150 27637 27638 27639 82963 82964 82965
+Info) Opened coordinate file loop3.frame240.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame240.water3.pdb.
+frame 42
+3 nearby water molecule(s) in frame 42 around calcium 3
+21148 21149 21150 27637 27638 27639 89665 89666 89667
+Info) Opened coordinate file loop3.frame241.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame241.water3.pdb.
+frame 43
+3 nearby water molecule(s) in frame 43 around calcium 3
+27637 27638 27639 29485 29486 29487 80992 80993 80994
+Info) Opened coordinate file loop3.frame242.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame242.water3.pdb.
+frame 44
+3 nearby water molecule(s) in frame 44 around calcium 3
+4237 4238 4239 39640 39641 39642 80992 80993 80994
+Info) Opened coordinate file loop3.frame243.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame243.water3.pdb.
+frame 45
+3 nearby water molecule(s) in frame 45 around calcium 3
+20836 20837 20838 52468 52469 52470 80992 80993 80994
+Info) Opened coordinate file loop3.frame244.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame244.water3.pdb.
+frame 46
+3 nearby water molecule(s) in frame 46 around calcium 3
+17656 17657 17658 20836 20837 20838 52468 52469 52470
+Info) Opened coordinate file loop3.frame245.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame245.water3.pdb.
+frame 47
+3 nearby water molecule(s) in frame 47 around calcium 3
+20836 20837 20838 52468 52469 52470 91030 91031 91032
+Info) Opened coordinate file loop3.frame246.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame246.water3.pdb.
+frame 48
+3 nearby water molecule(s) in frame 48 around calcium 3
+20836 20837 20838 55165 55166 55167 77056 77057 77058
+Info) Opened coordinate file loop3.frame247.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame247.water3.pdb.
+frame 49
+3 nearby water molecule(s) in frame 49 around calcium 3
+9769 9770 9771 15769 15770 15771 20836 20837 20838
+Info) Opened coordinate file loop3.frame248.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame248.water3.pdb.
+frame 50
+3 nearby water molecule(s) in frame 50 around calcium 3
+9769 9770 9771 11002 11003 11004 15769 15770 15771
+Info) Opened coordinate file loop3.frame249.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame249.water3.pdb.
+frame 51
+3 nearby water molecule(s) in frame 51 around calcium 3
+15769 15770 15771 36574 36575 36576 56746 56747 56748
+Info) Opened coordinate file loop3.frame250.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame250.water3.pdb.
+frame 52
+3 nearby water molecule(s) in frame 52 around calcium 3
+15769 15770 15771 36574 36575 36576 56746 56747 56748
+Info) Opened coordinate file loop3.frame251.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame251.water3.pdb.
+frame 53
+3 nearby water molecule(s) in frame 53 around calcium 3
+15769 15770 15771 36574 36575 36576 56746 56747 56748
+Info) Opened coordinate file loop3.frame252.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame252.water3.pdb.
+frame 54
+3 nearby water molecule(s) in frame 54 around calcium 3
+15769 15770 15771 36574 36575 36576 56746 56747 56748
+Info) Opened coordinate file loop3.frame253.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame253.water3.pdb.
+frame 55
+3 nearby water molecule(s) in frame 55 around calcium 3
+15769 15770 15771 36574 36575 36576 97729 97730 97731
+Info) Opened coordinate file loop3.frame254.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame254.water3.pdb.
+frame 56
+3 nearby water molecule(s) in frame 56 around calcium 3
+15769 15770 15771 25396 25397 25398 97729 97730 97731
+Info) Opened coordinate file loop3.frame255.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame255.water3.pdb.
+frame 57
+3 nearby water molecule(s) in frame 57 around calcium 3
+15769 15770 15771 40075 40076 40077 46663 46664 46665
+Info) Opened coordinate file loop3.frame256.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame256.water3.pdb.
+frame 58
+3 nearby water molecule(s) in frame 58 around calcium 3
+15769 15770 15771 40075 40076 40077 46663 46664 46665
+Info) Opened coordinate file loop3.frame257.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame257.water3.pdb.
+frame 59
+3 nearby water molecule(s) in frame 59 around calcium 3
+15769 15770 15771 40075 40076 40077 46663 46664 46665
+Info) Opened coordinate file loop3.frame258.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame258.water3.pdb.
+frame 60
+3 nearby water molecule(s) in frame 60 around calcium 3
+15769 15770 15771 40075 40076 40077 46663 46664 46665
+Info) Opened coordinate file loop3.frame259.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame259.water3.pdb.
+frame 61
+3 nearby water molecule(s) in frame 61 around calcium 3
+7825 7826 7827 15769 15770 15771 40075 40076 40077
+Info) Opened coordinate file loop3.frame260.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame260.water3.pdb.
+frame 62
+3 nearby water molecule(s) in frame 62 around calcium 3
+7825 7826 7827 15769 15770 15771 40075 40076 40077
+Info) Opened coordinate file loop3.frame261.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame261.water3.pdb.
+frame 63
+3 nearby water molecule(s) in frame 63 around calcium 3
+15769 15770 15771 28696 28697 28698 90895 90896 90897
+Info) Opened coordinate file loop3.frame262.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame262.water3.pdb.
+frame 64
+3 nearby water molecule(s) in frame 64 around calcium 3
+15769 15770 15771 28696 28697 28698 90895 90896 90897
+Info) Opened coordinate file loop3.frame263.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame263.water3.pdb.
+frame 65
+3 nearby water molecule(s) in frame 65 around calcium 3
+15769 15770 15771 28696 28697 28698 90895 90896 90897
+Info) Opened coordinate file loop3.frame264.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame264.water3.pdb.
+frame 66
+3 nearby water molecule(s) in frame 66 around calcium 3
+15769 15770 15771 28696 28697 28698 90895 90896 90897
+Info) Opened coordinate file loop3.frame265.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame265.water3.pdb.
+frame 67
+3 nearby water molecule(s) in frame 67 around calcium 3
+15769 15770 15771 86761 86762 86763 90895 90896 90897
+Info) Opened coordinate file loop3.frame266.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame266.water3.pdb.
+frame 68
+3 nearby water molecule(s) in frame 68 around calcium 3
+15769 15770 15771 90895 90896 90897 93625 93626 93627
+Info) Opened coordinate file loop3.frame267.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame267.water3.pdb.
+frame 69
+3 nearby water molecule(s) in frame 69 around calcium 3
+15769 15770 15771 90895 90896 90897 93625 93626 93627
+Info) Opened coordinate file loop3.frame268.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame268.water3.pdb.
+frame 70
+3 nearby water molecule(s) in frame 70 around calcium 3
+15769 15770 15771 50365 50366 50367 90895 90896 90897
+Info) Opened coordinate file loop3.frame269.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame269.water3.pdb.
+frame 71
+3 nearby water molecule(s) in frame 71 around calcium 3
+15769 15770 15771 50365 50366 50367 90895 90896 90897
+Info) Opened coordinate file loop3.frame270.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame270.water3.pdb.
+frame 72
+3 nearby water molecule(s) in frame 72 around calcium 3
+15769 15770 15771 50365 50366 50367 90895 90896 90897
+Info) Opened coordinate file loop3.frame271.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame271.water3.pdb.
+frame 73
+3 nearby water molecule(s) in frame 73 around calcium 3
+15769 15770 15771 50365 50366 50367 90895 90896 90897
+Info) Opened coordinate file loop3.frame272.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame272.water3.pdb.
+frame 74
+3 nearby water molecule(s) in frame 74 around calcium 3
+15769 15770 15771 50365 50366 50367 90895 90896 90897
+Info) Opened coordinate file loop3.frame273.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame273.water3.pdb.
+frame 75
+3 nearby water molecule(s) in frame 75 around calcium 3
+15769 15770 15771 49801 49802 49803 90895 90896 90897
+Info) Opened coordinate file loop3.frame274.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame274.water3.pdb.
+frame 76
+2 nearby water molecule(s) in frame 76 around calcium 3
+15769 15770 15771 49801 49802 49803
+Info) Opened coordinate file loop3.frame275.water2.pdb for writing.
+Info) Finished with coordinate file loop3.frame275.water2.pdb.
+frame 77
+3 nearby water molecule(s) in frame 77 around calcium 3
+15769 15770 15771 49801 49802 49803 90895 90896 90897
+Info) Opened coordinate file loop3.frame276.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame276.water3.pdb.
+frame 78
+3 nearby water molecule(s) in frame 78 around calcium 3
+37225 37226 37227 51715 51716 51717 90895 90896 90897
+Info) Opened coordinate file loop3.frame277.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame277.water3.pdb.
+frame 79
+3 nearby water molecule(s) in frame 79 around calcium 3
+37225 37226 37227 76777 76778 76779 90895 90896 90897
+Info) Opened coordinate file loop3.frame278.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame278.water3.pdb.
+frame 80
+2 nearby water molecule(s) in frame 80 around calcium 3
+37225 37226 37227 76777 76778 76779
+Info) Opened coordinate file loop3.frame279.water2.pdb for writing.
+Info) Finished with coordinate file loop3.frame279.water2.pdb.
+frame 81
+3 nearby water molecule(s) in frame 81 around calcium 3
+37225 37226 37227 76777 76778 76779 90895 90896 90897
+Info) Opened coordinate file loop3.frame280.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame280.water3.pdb.
+frame 82
+2 nearby water molecule(s) in frame 82 around calcium 3
+6247 6248 6249 76777 76778 76779
+Info) Opened coordinate file loop3.frame281.water2.pdb for writing.
+Info) Finished with coordinate file loop3.frame281.water2.pdb.
+frame 83
+2 nearby water molecule(s) in frame 83 around calcium 3
+6247 6248 6249 76777 76778 76779
+Info) Opened coordinate file loop3.frame282.water2.pdb for writing.
+Info) Finished with coordinate file loop3.frame282.water2.pdb.
+frame 84
+3 nearby water molecule(s) in frame 84 around calcium 3
+6247 6248 6249 76777 76778 76779 90895 90896 90897
+Info) Opened coordinate file loop3.frame283.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame283.water3.pdb.
+frame 85
+3 nearby water molecule(s) in frame 85 around calcium 3
+6247 6248 6249 76777 76778 76779 90895 90896 90897
+Info) Opened coordinate file loop3.frame284.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame284.water3.pdb.
+frame 86
+4 nearby water molecule(s) in frame 86 around calcium 3
+58570 58571 58572 63775 63776 63777 76777 76778 76779 87454 87455 87456
+Info) Opened coordinate file loop3.frame285.water4.pdb for writing.
+Info) Finished with coordinate file loop3.frame285.water4.pdb.
+frame 87
+3 nearby water molecule(s) in frame 87 around calcium 3
+58570 58571 58572 63775 63776 63777 76777 76778 76779
+Info) Opened coordinate file loop3.frame286.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame286.water3.pdb.
+frame 88
+3 nearby water molecule(s) in frame 88 around calcium 3
+58570 58571 58572 63775 63776 63777 76777 76778 76779
+Info) Opened coordinate file loop3.frame287.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame287.water3.pdb.
+frame 89
+3 nearby water molecule(s) in frame 89 around calcium 3
+58570 58571 58572 63775 63776 63777 76777 76778 76779
+Info) Opened coordinate file loop3.frame288.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame288.water3.pdb.
+frame 90
+3 nearby water molecule(s) in frame 90 around calcium 3
+58570 58571 58572 63775 63776 63777 76777 76778 76779
+Info) Opened coordinate file loop3.frame289.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame289.water3.pdb.
+frame 91
+3 nearby water molecule(s) in frame 91 around calcium 3
+58570 58571 58572 63775 63776 63777 76777 76778 76779
+Info) Opened coordinate file loop3.frame290.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame290.water3.pdb.
+frame 92
+3 nearby water molecule(s) in frame 92 around calcium 3
+58570 58571 58572 63775 63776 63777 76777 76778 76779
+Info) Opened coordinate file loop3.frame291.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame291.water3.pdb.
+frame 93
+3 nearby water molecule(s) in frame 93 around calcium 3
+58570 58571 58572 63775 63776 63777 76777 76778 76779
+Info) Opened coordinate file loop3.frame292.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame292.water3.pdb.
+frame 94
+3 nearby water molecule(s) in frame 94 around calcium 3
+27904 27905 27906 63775 63776 63777 76777 76778 76779
+Info) Opened coordinate file loop3.frame293.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame293.water3.pdb.
+frame 95
+2 nearby water molecule(s) in frame 95 around calcium 3
+13873 13874 13875 76777 76778 76779
+Info) Opened coordinate file loop3.frame294.water2.pdb for writing.
+Info) Finished with coordinate file loop3.frame294.water2.pdb.
+frame 96
+3 nearby water molecule(s) in frame 96 around calcium 3
+63775 63776 63777 71122 71123 71124 76777 76778 76779
+Info) Opened coordinate file loop3.frame295.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame295.water3.pdb.
+frame 97
+2 nearby water molecule(s) in frame 97 around calcium 3
+66781 66782 66783 76777 76778 76779
+Info) Opened coordinate file loop3.frame296.water2.pdb for writing.
+Info) Finished with coordinate file loop3.frame296.water2.pdb.
+frame 98
+3 nearby water molecule(s) in frame 98 around calcium 3
+66781 66782 66783 76777 76778 76779 78919 78920 78921
+Info) Opened coordinate file loop3.frame297.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame297.water3.pdb.
+frame 99
+3 nearby water molecule(s) in frame 99 around calcium 3
+5500 5501 5502 76777 76778 76779 78919 78920 78921
+Info) Opened coordinate file loop3.frame298.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame298.water3.pdb.
+frame 100
+3 nearby water molecule(s) in frame 100 around calcium 3
+3709 3710 3711 51355 51356 51357 76777 76778 76779
+Info) Opened coordinate file loop3.frame299.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame299.water3.pdb.
+frame 101
+3 nearby water molecule(s) in frame 101 around calcium 3
+3709 3710 3711 19186 19187 19188 44833 44834 44835
+Info) Opened coordinate file loop3.frame300.water3.pdb for writing.
+Info) Finished with coordinate file loop3.frame300.water3.pdb.
+Info) VMD for LINUXAMD64, version 1.9.4a43 (June 11, 2020)
+Info) Exiting normally.
+DONE!
