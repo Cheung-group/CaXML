@@ -1,6 +1,0 @@
-binarycontactmaps.csv | binary contacts (atoms from residues [ALA,ASN,ASP,GLN,GLU,GLY,ILE,LYS,PHE,PRO,SER,SOL,THR,TYR,VAL] within cutoff distance of CA) with cutoffs [2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0] angstroms.
-  120 features
-distances.csv | superset of binarycontactmaps.csv with 15 more features which contain the minimum distance in angstroms of an atom in each residue from CA or 6 angstroms if contact is absent.
-  135 features
-graphtheorydata.csv | superset of distances.csv with 9 graph theory measurements derived from the distance-weighted contact map [Eccentricity,closnesscentrality,harmonicclosnesscentrality,betweenesscentrality,Weighted Degree,Degree,clustering,triangles,eigencentrality]
-  144 features

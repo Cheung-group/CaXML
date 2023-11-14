@@ -1,3 +1,5 @@
+# Description: Add hydrogens to a PDB file
+
 from pymol import cmd
 import sys, getopt
 import os
