@@ -2,10 +2,12 @@
 
 ################################################################################
 # Convert pdb to xyz
-# format:
+# Usage: perl pdb2xyz.pl pdbfile.pdb
+# Output: New.xyz
+# xyz format:
 # Atom x y z
-# %4s%1s%15.8f%15.8f%15.8f
-# Modified by P. Zhang, 4/23/2019
+# %4s%1s%10.5f%10.5f%10.5f
+# Modified by P. Zhang, 11/13/2023
 ################################################################################
 
 
