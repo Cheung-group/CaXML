@@ -13,4 +13,5 @@ sklearn
 scipy
 pandas
 pymol
+networkx
 
