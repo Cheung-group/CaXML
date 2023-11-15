@@ -7,13 +7,11 @@ QM output: directory QM-RESP/output
 
 # Required packages
 
-pymol # conda install -c conda-forge -c schrodinger pymol-bundle
-xgboost
-pandas
-networkx
-dscribe
+- pymol # conda install -c conda-forge -c schrodinger pymol-bundle
+- xgboost
+- pandas
+- networkx
+- dscribe
 
----
-**NOTE**  
-scipy, biopython, and scikit-learn are already installed as dependencies of the above packages.
----
+**NOTE:**
+_scipy_, _biopython_, and _scikit-learn_ are already installed as dependencies of the above packages.
