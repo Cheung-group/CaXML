@@ -5,6 +5,7 @@ import sys
 import argparse
 from Bio.PDB import PDBParser
 from .graph_feature_extraction import calc_dist_matrix, loop_dist_matrix, contact, network
+from .symmetry_funcs import Structure
 
 parser = argparse.ArgumentParser(description='Extract network parameters from pdb structures')
 parser.add_argument('dir', metavar='DIR', type=str, help='directory containing pdb files')
@@ -36,4 +37,23 @@ for struct in allpdb:
     counter = counter + 1
     if counter % 100 == 0:
         print(counter, "structures processed ...", end = '\r')
+        sys.stdout.flush()
+
+
+
+# Use all the files
+loops = allpdb
+
+structures = dict()
+counter = 0
+count_total = len(loops)
+for loop in loops:
+    name = loop.split('/')[1].split('.pdb')[0]
+    structures[name]=Structure(loop)
+    structures[name].calc_sym()  
+
+    counter = counter + 1
+    if counter % 100 == 0:
+        #sys.stdout.write('\r')
+        print(counter, "structures out of ", count_total, " processed ...", end = '\r')
         sys.stdout.flush()

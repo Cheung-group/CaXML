@@ -10,8 +10,9 @@ QM output: directory QM-RESP/output
 pymol # conda install -c conda-forge -c schrodinger pymol-bundle
 # scipy
 # biopython
+# scikit-learn
 xgboost
-scikit-learn
 pandas
 networkx
+dscribe
 
