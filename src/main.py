@@ -32,6 +32,7 @@ def convert_pdb(infile, outfile):
     cmd.load(infile)
     cmd.sort()
     cmd.save(outfile)
+    cmd.delete('all')
 
     
 def get_network(network_file=None):
@@ -40,14 +41,19 @@ def get_network(network_file=None):
 
 
 # Create network and extract network parameters
-deg_centrality = []
-bet_centrality = []
-close_centrality = []
-cluster_coeff = []
+# deg_centrality = []
+# bet_centrality = []
+# close_centrality = []
+# cluster_coeff = []
 
 counter = 0
+
+pdb_codes = []
+feature_matrix = None
+
 for struct in tqdm(allpdb, total=count_total):
     pdb_code = struct.stem
+    pdb_codes.append(pdb_code)
     pymol_pdb_path = f'pymol_{pdb_code}.pdb'
     convert_pdb(struct, pymol_pdb_path)
 
@@ -60,10 +66,10 @@ for struct in tqdm(allpdb, total=count_total):
     
     contact(edgefile, dist, cutoff=7)
     (dc, bc, cce, cco) = network(edgefile,	netparmfile)
-    deg_centrality.append(dc)
-    bet_centrality.append(bc)
-    close_centrality.append(cce)
-    cluster_coeff.append(cco)
+    # deg_centrality.append(dc)
+    # bet_centrality.append(bc)
+    # close_centrality.append(cce)
+    # cluster_coeff.append(cco)
 
     #print(f"{pdb_code},{dc},{bc},{cce},{cco}")
     # calculate symmetry parameters
@@ -72,11 +78,13 @@ for struct in tqdm(allpdb, total=count_total):
 
     # adding the 13 x 4 = 52 network parameters to the beginning of the feat matrix
     net = get_network(netparmfile)
+    sym = st.feat_atom['Ca'].copy()
 
-    st.feat_atom['Ca'] = np.hstack((net, st.feat_atom['Ca']))
+    del st # delete the structure object to free up memory
 
-    print(st.feat_atom['Ca'])
-
+    feat = np.hstack((net, sym))
+	
+    feature_matrix = np.vstack((feature_matrix, feat)) if feature_matrix is not None else feat
 
     # remove the temporary files
     os.remove(pymol_pdb_path)
@@ -86,3 +94,6 @@ for struct in tqdm(allpdb, total=count_total):
 
     counter = counter + 1
 
+
+np.savetxt("feature_matrix.csv", feature_matrix, delimiter=",")
+np.savetxt("pdb_codes.csv", np.array(pdb_codes), delimiter=",", fmt='%s')

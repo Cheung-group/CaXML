@@ -50,7 +50,7 @@ class Structure:
 
         # Skip hydrogen atoms here
         structure = structure[structure.get_atomic_numbers() > 1]
-        feat_lst=[]
+        feat_lst = []
 
         # Get the position of the calcium atom
         try:
@@ -83,23 +83,6 @@ class Structure:
         
         # combine the above functions (2d arrays) into one 2d array
         feat = np.hstack(tuple(feat_lst))
+
         np.savetxt(f'sym_{self.name}.csv', feat, delimiter=',')
         self.feat_atom['Ca'] = feat.flatten()
-
-        # # Skip water here
-        # # Skip to the last water x 3 rows
-        # skip_water = -3 * self.water
-        # # If there is no water, skip none (-1)
-        # if skip_water == 0:
-        #     skip_water = None
-        # #print("skip water atoms",skip_water)
-        # #print(dat.shape)
-        # #print(dat[:skip_water,:].shape)
-        # for i in dat[:skip_water,:]:
-        #     ikey = aN[int(i[-2])]
-        #     if ikey in self.feat_atom:
-        #         self.feat_atom[ikey] = np.vstack((self.feat_atom[ikey],i))
-        #     else:
-        #         #print(ikey,"is not in the dictionary, adding ...")
-        #         self.feat_atom[ikey] = i
-        # crudely add the network parameters
