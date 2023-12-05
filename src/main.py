@@ -1,13 +1,17 @@
 # Main code to extract network parameters from pdb structures
 
-import sys
+import os
 import argparse
 from tqdm import tqdm
 from pathlib import Path
 
+import numpy as np
+import pandas as pd
+
 from Bio.PDB import PDBParser
-from graph_feature_extraction import calc_dist_matrix, loop_dist_matrix, contact, network
+from graph_feature_extraction import calc_dist_matrix, contact, network, sym_dist_matrix
 from symmetry_funcs import Structure
+from pymol import cmd
 
 import warnings
 from Bio import BiopythonWarning
@@ -23,6 +27,17 @@ pdbdir = Path(args.dir)
 allpdb = list(pdbdir.glob("*.pdb"))
 count_total = len(allpdb)
 
+# First convert pdb using pymol
+def convert_pdb(infile, outfile):
+    cmd.load(infile)
+    cmd.sort()
+    cmd.save(outfile)
+
+    
+def get_network(network_file=None):
+    net = pd.read_csv(network_file)
+    return np.array(net.iloc[:, 1:]).flatten()
+
 
 # Create network and extract network parameters
 deg_centrality = []
@@ -32,45 +47,42 @@ cluster_coeff = []
 
 counter = 0
 for struct in tqdm(allpdb, total=count_total):
-    ###pdb_code = struct.split('/')[-1].split('.pdb')[0]
     pdb_code = struct.stem
-    structure = PDBParser().get_structure(pdb_code, struct)
-    dist_matrix = calc_dist_matrix(structure,structure, method='heavy')
+    pymol_pdb_path = f'pymol_{pdb_code}.pdb'
+    convert_pdb(struct, pymol_pdb_path)
 
-    dist = loop_dist_matrix(dist_matrix)
-    edgefile = 'edgelist.'+pdb_code+'.csv'
-    netparmfile = 'net.'+pdb_code+'.csv'
-    contact(edgefile, dist)
-    (dc, bc, cce, cco) = network(edgefile,netparmfile)
+    structure = PDBParser().get_structure(pdb_code, pymol_pdb_path)
+    dist_matrix = calc_dist_matrix(structure, structure, method='heavy')
+
+    dist = sym_dist_matrix(dist_matrix)
+    edgefile = f'edgelist.{pdb_code}.csv'
+    netparmfile = f'net.{pdb_code}.csv'
+    
+    contact(edgefile, dist, cutoff=7)
+    (dc, bc, cce, cco) = network(edgefile,	netparmfile)
     deg_centrality.append(dc)
     bet_centrality.append(bc)
     close_centrality.append(cce)
     cluster_coeff.append(cco)
 
     #print(f"{pdb_code},{dc},{bc},{cce},{cco}")
-    counter = counter + 1
-    #if counter % 100 == 0:
-    #    print(counter, "structures processed ...", end = '\r')
-    #    sys.stdout.flush()
+    # calculate symmetry parameters
+    st = Structure(pymol_pdb_path)
+    st.calc_sym()  
+
+    # adding the 13 x 4 = 52 network parameters to the beginning of the feat matrix
+    net = get_network(netparmfile)
+
+    st.feat_atom['Ca'] = np.hstack((net, st.feat_atom['Ca']))
+
+    print(st.feat_atom['Ca'])
 
 
-
-# calculate symmetry parameters
-# Use all the files
-loops = allpdb
-
-structures = dict()
-counter = 0
-
-for loop in tqdm(loops, total=count_total):
-    #print(loop)
-    #name = loop.split('/')[-1].split('.pdb')[0]
-    name = loop.stem
-    structures[name]=Structure(loop)
-    structures[name].calc_sym()  
+    # remove the temporary files
+    os.remove(pymol_pdb_path)
+    os.remove(edgefile)
+    os.remove(netparmfile)
+    os.remove(f'sym_pymol_{pdb_code}.csv')
 
     counter = counter + 1
-    # if counter % 100 == 0:
-    #     #sys.stdout.write('\r')
-    #     print(counter, "structures out of ", count_total, " processed ...", end = '\r')
-    #     sys.stdout.flush()
+

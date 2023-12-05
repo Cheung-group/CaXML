@@ -1,3 +1,7 @@
 Samples/QM_Input/OLD/apoCaM/4.Equil/nvt-pr.trr
 .vscode/settings.json
 ML/RFregression/RFregression-sklearn.py
+../QM_charge_determination/2.RESP_Fitting/*.chg
+__pycache__
+Features_Extraction/LOOP_STRUCTURES/*.pdb
+

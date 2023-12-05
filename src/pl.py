@@ -1,6 +1,9 @@
 from scipy.stats.kde import gaussian_kde
 import numpy as np
+import matplotlib as mpl
 import matplotlib.pyplot as plt
+from matplotlib.ticker import AutoMinorLocator
+
 
 def ridgeline(data, overlap=0, y_scale = 50, fill=True, labels=None, n_points=150):
     """
@@ -16,7 +19,6 @@ def ridgeline(data, overlap=0, y_scale = 50, fill=True, labels=None, n_points=15
         raise ValueError('overlap must be in [0 1]')
     xx = np.linspace(np.min(np.concatenate(data)),
                      np.max(np.concatenate(data)), n_points)
-    curves = []
     ys = []
     for i, d in enumerate(data):
         pdf = gaussian_kde(d)

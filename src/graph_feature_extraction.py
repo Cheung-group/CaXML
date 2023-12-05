@@ -4,6 +4,7 @@ import csv
 from operator import itemgetter
 import networkx as nx
 
+LARGE_DISTANCE = 99
 
 def calc_residue_dist(residue_one, residue_two, method="heavy"):
     """Calculate the minimum distance between two residues.
@@ -47,7 +48,7 @@ def calc_residue_dist(residue_one, residue_two, method="heavy"):
     # If there is no oxgyen (cap)
     # then return a large distance
     if not dist_ij:
-        return 99
+        return LARGE_DISTANCE
     else:
         return min(dist_ij)
 
@@ -67,6 +68,12 @@ def calc_dist_matrix(chain_one, chain_two, method='oxygen-calcium'):
         row = row + 1
     return answer
 
+
+def sym_dist_matrix(dist_matrix):
+    '''returns a symmetrical array'''
+    mloop = dist_matrix[:13, :13]
+    
+    return mloop
 
 def loop_dist_matrix(dist_matrix):
     '''returns a symmetrical array'''
@@ -110,9 +117,6 @@ def contact(filename, mtot, cutoff=6):
                     writer.writerow((i, j, 'Undirected', 1 / mtot[i, j]))
 
 
-import csv
-import networkx as nx
-
 def network(inputcsv, outputcsv):
     """
     Extracts graph features from a CSV file and writes them to another CSV file.
@@ -137,7 +141,7 @@ def network(inputcsv, outputcsv):
 
     G = nx.Graph(edgelist)
     # In case some graphs are not complete
-    G.add_nodes_from([str(i) for i in range(14)])
+    #G.add_nodes_from([str(i) for i in range(14)])
     # print(nx.degree(G))
     deg_centrality = nx.degree_centrality(G)
     bet_centrality = nx.betweenness_centrality(G, normalized=True, endpoints=False)

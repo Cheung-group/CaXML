@@ -23,11 +23,11 @@ def main():
    parser = argparse.ArgumentParser(description='Add hydrogens to a PDB file')
    parser.add_argument('-i', '--ifile', type=str, default='in.pdb', help='input file')
    parser.add_argument('-o', '--ofile', type=str, default='out.pdb', help='output file')
-   parser.add_argument('--loopSize', type=int, default=12, help='loop size')
-   parser.add_argument('--firstResinLoop', type=int, default=1, help='ID number of first residue in the loop')
+   parser.add_argument('-s', '--loopSize', type=int, default=12, help='loop size')
+   parser.add_argument('-fr', '--firstResinLoop', type=int, default=1, help='ID number of first residue in the loop')
    args = parser.parse_args()
 
-   bb_mod(args.ifile, args.ofile, args.loopSize, args.firstResinLoop)
+   bb_mod(args.ifile, args.ofile, loopSize=args.loopSize, firstResinLoop=args.firstResinLoop)
 
 if __name__ == "__main__":
    main()
