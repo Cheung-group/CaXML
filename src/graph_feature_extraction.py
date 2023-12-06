@@ -71,7 +71,7 @@ def calc_dist_matrix(chain_one, chain_two, method='oxygen-calcium'):
 
 def sym_dist_matrix(dist_matrix, capped=False):
     '''returns a symmetrical array'''
-    mloop = loop_dist_matrix(dist_matrix) is capped else dist_matrix[:13, :13] 
+    mloop = loop_dist_matrix(dist_matrix) if capped else dist_matrix[:13, :13] 
     
     return mloop
 
