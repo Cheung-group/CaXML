@@ -1,9 +1,8 @@
 # calML
-Deriving Ca2+ Charge in Varying Environment Using Machine Learning Methods
+Deriving Ca2+ Charge in Varying Environments Using Machine Learning Methods
 
-QM input: directory QM-RESP/input, which would be the MD structures (and Gaussian input files from the md structures).
-QM output: directory QM-RESP/output
-
+Input: PDB or MD structure of the EF-hand calcium-binding loop [12 residues + 1 calcium ion].
+Output: i-RESP (or RESP) calcium charge in the given environment. 
 
 # Required packages
 
