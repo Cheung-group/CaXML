@@ -2,6 +2,7 @@
 Deriving Ca2+ Charge in Varying Environments Using Machine Learning Methods
 
 Input: PDB or MD structure of the EF-hand calcium-binding loop [12 residues + 1 calcium ion].
+
 Output: i-RESP (or RESP) calcium charge in the given environment. 
 
 # Required packages
