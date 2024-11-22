@@ -1,5 +1,5 @@
 # CaXML
-Deriving Ca2+ Charge in Varying Environments Using Machine Learning Methods
+Annotating Calcium Ion Charges in Varying Environments Using Explainable Machine Learning 
 
 Input: PDB or MD structure of the EF-hand calcium-binding loop [12 residues + 1 calcium ion].
 
